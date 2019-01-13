@@ -4,7 +4,7 @@ email: qdaolong@126.com
 description: > # this means to ignore newlines until "twitter_username:"
   This blog is used to share some knowledge of python, hope it can help you during
   your coffee time.
-imgurl: "/testblogs"
+imgurl: "/blogs"
 show_excerpts: false # set to true to show excerpts on the homepage
 
 # Minima date format
