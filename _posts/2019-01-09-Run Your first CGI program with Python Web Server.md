@@ -10,7 +10,7 @@ CGI program and running it.
 Create a folder called cgi-bin,  Here I put
 it in the folder C:\Python\Python-web.
 
-![](/assets/images/2018-12-18/1-1.jpg)
+![]({{ "/assets/images/2019-01-09/1.jpg | prepend: site.imgurl }})
 
 Create a file main.py, put it in the folder
 cgi-bin, so the Absolute Path of this file is
@@ -33,15 +33,15 @@ print ('</html>')
 
 Open cmd shell, change the current directory to
 C:\Python\Python-web as below :
-![](/assets/images/2018-12-18/1-2.jpg)
+![]({{ "/assets/images/2019-01-09/2.jpg | prepend: site.imgurl }})
 
 Then type python -m http.server --cgi 8002, start python web server.
 (please install python3 first)
-![](/assets/images/2018-12-18/1-3.jpg)
+![]({{ "/assets/images/2019-01-09/3.jpg | prepend: site.imgurl }})
 
 Open a browser, type http://localhost:8002/cgi-bin/main.py
 or http://127.0.0.1:8002/cgi-bin/main.py
-![](/assets/images/2018-12-18/1-4.jpg)
+![]({{ "/assets/images/2019-01-09/4.jpg | prepend: site.imgurl }})
 
 Bingo! You get it. Cool right? Have a cup of coffee and taste your victory.
 
@@ -76,14 +76,14 @@ Well, Let us see what is happenning here.  When we run the command
 python -m http.server --cgi 8002, acutally we were running the server.py
 file provide by python3. This file is in the folder where you installed
 python3. For me the file path is as below.
-![](/assets/images/2018-12-18/1-5.jpg)
+![]({{ "/assets/images/2019-01-09/5.jpg | prepend: site.imgurl }})
 
 Let's open the file server.py, and search for /cgi-bin or /htbin,
 we find a variable with name cgi-directories.
-![](/assets/images/2018-12-18/1-6.jpg)
+![]({{ "/assets/images/2019-01-09/6.jpg | prepend: site.imgurl }})
 
 Then we search cgi_directories, and find this:
-![](/assets/images/2018-12-18/1-7.jpg)
+![]({{ "/assets/images/2019-01-09/7.jpg | prepend: site.imgurl }})
 
 That's why we need to start the python web server under the parent
 folder of cgi-bin or htbin. The url could be in format
