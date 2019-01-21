@@ -51,20 +51,20 @@ cd Python-3.7.2
 ./configure
 ```
 Note : you may meet the "no acceptable C compiler found in $PATH " error as below :
-![]({{ "7.png" | prepend: page.imgpath | prepend: site.imgurl }})
+![]({{ "7.png" | prepend: page.imgpath | prepend: site.imgurl }})<br/>
 In this case , you need to install C compilers first:
 `yum install make gcc gcc-c++`
-![]({{ "8.png" | prepend: page.imgpath | prepend: site.imgurl }})
+![]({{ "8.png" | prepend: page.imgpath | prepend: site.imgurl }})<br/>
 Then run `./configure` again.
 when you run `./configure`, you need to answer a question. Type `y`.
-![]({{ "9.png" | prepend: page.imgpath | prepend: site.imgurl }})
+![]({{ "9.png" | prepend: page.imgpath | prepend: site.imgurl }})<br/>
 - compile and install
 ```
 make
 make install
 ```
 after you finish, type `python3 --version` in the command line. You should see the new python version you installed.
-![]({{ "10.png" | prepend: page.imgpath | prepend: site.imgurl }})
+![]({{ "10.png" | prepend: page.imgpath | prepend: site.imgurl }})<br/>
 If it shows command not found error. You need to edit the PATH variable.
 For me my python3 command is in the path `/usr/local/bin`, so I need to add this path to PATH variable. One way to do this:
 `vim ~/.bashrc`
@@ -76,8 +76,8 @@ then run the command `source ~/.bashrc`, then try `python3 --version`
 in a virtual environment. But here I will just install it directly. I need to remind you that you may have
 two verions of python installed in your system, and you want to work on flask with the newest python3. So you need to install
 flask with command `python3 -m pip install flask`(use user root)
-Then try `flask --version` to check if you installed flask successfully.
-![]({{ "11.png" | prepend: page.imgpath | prepend: site.imgurl }})
+Then try `flask --version` to check if you installed flask successfully.<br/>
+![]({{ "11.png" | prepend: page.imgpath | prepend: site.imgurl }})<br/>
 
 ### 5. Run your first flask applicaton
 To run your first flask application, you need to have an flask applicaton first, here I created a python file
@@ -97,10 +97,10 @@ def user(name):
 
 {% endhighlight %}
 first run command `export FLASK_APP=hellotest.py`, then run `flask run -h 0.0.0.0 -p 80`,
-it shows information like below:
-![]({{ "12.png" | prepend: page.imgpath | prepend: site.imgurl }})    
+it shows information like below:<br/>
+![]({{ "12.png" | prepend: page.imgpath | prepend: site.imgurl }})<br/>
 
 Then open a browser in your computer and access the flask applicaton with AWS EC2 IPv4 public IP address(for me its http://35.183.77.241/ ):
-![]({{ "13.png" | prepend: page.imgpath | prepend: site.imgurl }})   
-
+![]({{ "13.png" | prepend: page.imgpath | prepend: site.imgurl }})<br/>   
+![]({{ "14.png" | prepend: page.imgpath | prepend: site.imgurl }})<br/> 
 Voila！ You did it, now you can get your ass on the boat and enjoy the journey of flask!
