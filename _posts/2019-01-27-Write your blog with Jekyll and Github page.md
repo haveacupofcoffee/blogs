@@ -12,11 +12,12 @@ imgPathTwo : "2019-01-27/"
 Bonjour, geeks and nerds. In this post I will introduce how to write your blog with Jekyll and Github Pages.
 There are many tutorials online of Jekyll and Github. If this post can't please you, well, I don't care.
 The syllabus of this post :<br/>
-| No | Title | Comment |
-| :------: | :------: | :------: |
-|  1 | Jekyll | Brief introduction |
-|  2 | Github Pages | Brief introduction |
-|  3 | Deploy Jekyll with minima theme on Github Pages | Brief introduction |
+
+No | Title | Comment
+:------: | :------: | :------:
+1 | Jekyll | Brief introduction
+2 | Github Pages | Brief introduction
+3 | Deploy Jekyll with minima theme on Github Pages | Brief introduction
 
 ### 1.Jekyll
 I highly recommend you to read Jekyll's official step by step tutorial.<br/>
@@ -39,7 +40,8 @@ file.Well, there are many other themes you can use, but here I will just use min
 ![]({{ imgpath | append : "third2.png"  }})<br/>
 - Now you have your own minima repository, if you don't like the name, just change it
 ![]({{ imgpath | append : "third3.png"  }})<br/>
-for me , I clone the minima repository to my local computer and create a new repository called `blogs`,
+
+For me , I cloned the minima repository to my local computer and create a new repository called `blogs`,
 then clone the `blogs` repository to my local computer, copy all the files in minima repository to the `blogs`
 repository, changed some files(you don't need to do this at first), then pushed the local `blogs` repository
 to the `blogs` repository on Github(to the master branch directly). Now if you access
