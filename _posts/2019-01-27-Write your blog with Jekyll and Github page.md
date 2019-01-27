@@ -1,23 +1,22 @@
 ---
 layout : post
-title : Run your first flask application on AWS EC2
+title : Write your blog with Jekyll and Github Pages
 imgPathTwo : "2019-01-27/"
 ---
-[//]: # (the path of images is /assets/images/2019-01-27, the first part /assets/images/ is defined in \_config.yml, the second part 2019-01-27/ is the date in the title of the post, for each post, this part is different ,so the images src path is {{imgpath | append : "name of the image" }} eg : {{ imgpath | append : "1.png"}} )
+[//]: # (the path of images is /assets/images/2019-01-27, the first part /assets/images/ is defined in \_config.yml,
+[//]: # the second part 2019-01-27/ is the date in the title of the post, for each post, this part is different ,so the
+[//]: # images src path is {{imgpath | append : "name of the image" }} eg : {{ imgpath | append : "1.png"}} )
 {% assign imgpath = site.imgurl | append : site.imgPathOne | append: page.imgPathTwo %}
-{{ site.imgurl}}
-{{ site.imgPathOne }}
-{{ site.imgurl | append : site.imgPathOne | append: page.imgPathTwo }}
-{{ imgpath }}
+
 
 Bonjour, geeks and nerds. In this post I will introduce how to write your blog with Jekyll and Github Pages.
 There are many tutorials online of Jekyll and Github. If this post can't please you, well, I don't care.
-The syllabus of this post :
+The syllabus of this post :<br/>
 | No | Title | Comment |
 | :------: | :------: | :------: |
-| 1 | Jekyll | Brief introduction |
-| 2 | Github Pages | Brief introduction |
-| 3 | Deploy Jekyll with minima theme on Github Pages | Brief introduction |
+|  1 | Jekyll | Brief introduction |
+|  2 | Github Pages | Brief introduction |
+|  3 | Deploy Jekyll with minima theme on Github Pages | Brief introduction |
 
 ### 1.Jekyll
 I highly recommend you to read Jekyll's official step by step tutorial.<br/>
