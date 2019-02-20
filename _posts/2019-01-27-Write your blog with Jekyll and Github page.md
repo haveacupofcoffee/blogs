@@ -31,8 +31,7 @@ No | Title | Comment
 &emsp;I assume you would have a Jekyll project on your computer if you tried to type the code when you
 read the official Jekyll tutorial. When you run it, the first page it showed is ugly and simple, but
 at least it worked.
-&emsp;To make your blog pages pretty, Jekyll provides many themes. The default theme is minima, defined in \_config.yml  
-file.Well, there are many other themes you can use, but here I will just use minima as the example.<br/>
+&emsp;To make your blog pages pretty, Jekyll provides many themes. The default theme is minima, defined in `_config.yml` file.Well, there are many other themes you can use, but here I will just use minima as the example.<br/>
 &emsp;An easy way is to fork jekyll/minima repository to your account:
 - First you need to login on Github, seach jekyll/mimima like below :
 ![]({{ imgpath | append : "third1.png"  }})<br/>
