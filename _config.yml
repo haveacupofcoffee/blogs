@@ -9,6 +9,7 @@ imgPathOne: "/assets/images/"
 cvCssPath : "/assets/css/cv/"
 cvJsPath : "/assets/js/cv/"
 show_excerpts: false # set to true to show excerpts on the homepage
+cvImgSubPath: "cv/"
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
