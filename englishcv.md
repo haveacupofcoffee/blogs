@@ -1,7 +1,7 @@
 ---
 title : CV(EN)
 layout : cv
-myname: QIU DAOLONG
+myname: Daolong Qiu
 jobtitle : Programmer
 ad : High-tech zone, Chengdu City
 mail : qdaolong@126.com
@@ -81,52 +81,16 @@ projectexperience :
      - Job:Responsible for the communication of Java Bluetooth and devices (1000 -2000 JAVA)
      - Main Techniques:JAVA, Android, MySQL, Arduino Microcontroller Processing
 skills :
- - Git
-languages :
- - Python
- - CSS/HMTL
  -
-
+   skilltype : Software Knowledge
+   skillnames :
+    - Git
+ -
+   skilltype : Languages
+   skillnames :
+    - Python
+    - CSS/HMTL
+    - JavaScript
+    - Python flask
+    - JAVA
 ---
-
-          <div class="content">
-            <h3>Languages</h3>
-            <ul class="skills">
-              <li>Python</li>
-              <li>CSS/HTML</li>
-              <li>JavaScript</li>
-							<li>Python flask</li>
-							<li>Java</li>
-            </ul>
-          </div>
-        </div>
-        <!-- End 4th Row -->
-         <!-- Begin 5th Row -->
-				<!--
-        <div class="entry">
-        <h2>WORKS</h2>
-        	<ul class="works">
-        		<li><a href="images/1.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
-        		<li><a href="images/2.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
-        		<li><a href="images/3.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
-        		<li><a href="images/1.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
-        		<li><a href="images/2.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
-        		<li><a href="images/3.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
-        		<li><a href="images/1.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
-        		<li><a href="images/1.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
-        	</ul>
-        </div>
-			-->
-        <!-- Begin 5th Row -->
-      </div>
-      <div class="clear"></div>
-      <div class="paper-bottom"></div>
-    </div>
-    <!-- End Paper -->
-  </div>
-  <div class="wrapper-bottom"></div>
-</div>
-<div id="message"><a href="#top" id="top-link">Go to Top</a></div>
-<!-- End Wrapper -->
-</body>
-</html>
