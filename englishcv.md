@@ -6,7 +6,7 @@ jobtitle : Programmer
 ad : High-tech zone, Chengdu City
 mail : qdaolong@126.com
 tel : +86 17780015153
-web: put github page here
+web: https://haveacupofcoffee.github.io/blogs/
 educations :
  -
     period : Sep 2012 - Jul 2013
