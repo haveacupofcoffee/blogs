@@ -130,7 +130,7 @@
 						<p><a href="{{ experience.companyweb }}">{{ experience.projectname }}</a>,{{experience.location}}<br />
 							<em>{{ experience.occupation }}</em></p>
 						<ul class="info">
-							{% for duty in duties %}
+							{% for duty in experience.duties %}
 							<li>{{ duty }}</li>
 							{% endfor %}
 						</ul>
