@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "twitter_username:"
   your coffee time.
 imgurl: "/blogs"
 imgPathOne: "/assets/images/"
-cvCssPath : "/assets/css/cv/"
+cvCssPath : "../assets/css/cv/"
 cvJsPath : "/assets/js/cv/"
 show_excerpts: false # set to true to show excerpts on the homepage
 cvImgSubPath: "cv/"
