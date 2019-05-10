@@ -1,27 +1,20 @@
 ---
 layout : post
-title : Run your first flask application on AWS EC2
-imgPathTwo : "2019-01-27/"
+title : Link to your CV
+imgPathTwo : "2019-05-10/"
 ---
-[//]: # (the path of images is /assets/images/2019-01-27, the first part /assets/images/ is defined in \_config.yml, the second part 2019-01-27/ is the date in the title of the post, for each post, this part is different ,so the images src path is {{imgpath | append : "name of the image" }} eg : {{ imgpath | append : "1.png"}} )
-{% assign imgpath = site.imgurl | append : site.imgPathOne | append: page.imgPathTwo %}
-{{ site.imgurl}}
-{{ site.imgPathOne }}
-{{ site.imgurl | append : site.imgPathOne | append: page.imgPathTwo }}
-{{ imgpath }}
+[//]: # (the path of images is /assets/images/2019-01-27, the first part /assets/images/ is defined in \_config.yml, the second part 2019-05-10/ is the date in the title of the post, for each post, this part is different ,so the images src path is {{filepath | append : "name of the image" }} eg : {{ imgpath | append : "1.png"}} )
+{% assign filepath = site.imgurl | append : site.imgPathOne | append: page.imgPathTwo %}
 
-Bonjour, geeks and nerds. In this post I will introduce how to write your blog with Jekyll and Github Pages.
-There are many tutorials online of Jekyll and Github. If this post can't please you, well, I don't care.
-The syllabus of this post :
-| No | Title | Comment |
-| :------: | :------: | :------: |
-| 1 | Jekyll | Brief introduction |
-| 2 | Github Pages | Brief introduction |
-| 3 | Deploy Jekyll with minima theme on Github Pages | Brief introduction |
+&emsp; Hej,Hej! geeks and nerds. In the last post I introduced how to write your blog with Jekyll and Github page. It's time to link to your CV unless you have concerns about your privacy.
+&emsp; Since I was using minima theme of Jekyll, one way to do this is writing your CV information in `about.md` file. Then when you click on `about` in the navigation bar, it will show your CV. But it is not clear for the viewers unless you change the name `about` to `CV` or some other names which are obvious to the viewers. Here I will keep `about ` page as I want to put some information about the blog project. I will add a new navigation link near the `about` navigation link to present my CV.
+&emsp; To write a CV, the content of the CV is important, but the structure and the appearance is more important. You have to make it organized to give the viewer a great first impression. There are many CV templates online, using them will make your work easier.
+### 1.CV template
+&emsp; You could download the original CV template I am using from the link below:
+[download the CV template files]({{filepath | append : "cvtempalte.zip"})
 
-### 1.Jekyll
-I highly recommend you to read Jekyll's official step by step tutorial.<br/>
-[Jekyll offical step by step tutorial](https://jekyllrb.com/docs/step-by-step/01-setup/)<br/>
+### 2.Add CV files to the project
+
 
 ### 2.Github Page
 I highly recommend you to read the official introduction of Github pages.<br/>

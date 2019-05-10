@@ -4,10 +4,10 @@ email: qdaolong@126.com
 description: > # this means to ignore newlines until "twitter_username:"
   This blog is used to share some knowledge of python, hope it can help you during
   your coffee time.
-imgurl: "/blogs"
-imgPathOne: "/blogs/assets/images/"
-cvCssPath : "/blogs/assets/css/cv/"
-cvJsPath : "/blogs/assets/js/cv/"
+gitRepositoryURL: "/testblogs"
+imgPathOne: "/assets/images/"
+cvCssPath : "/assets/css/cv/"
+cvJsPath : "/assets/js/cv/"
 show_excerpts: false # set to true to show excerpts on the homepage
 cvImgSubPath: "cv/"
 
