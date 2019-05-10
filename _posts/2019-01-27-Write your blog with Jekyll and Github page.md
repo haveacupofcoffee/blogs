@@ -27,7 +27,7 @@ No | Title | Comment
 &emsp;I highly recommend you to read the official introduction of Github pages.<br/>
 [Github Page](https://pages.github.com/)
 
-### 3.Deply Jekyll with minima theme on Github Pages
+### 3.Deploy Jekyll with minima theme on Github Pages
 &emsp;I assume you would have a Jekyll project on your computer if you tried to type the code when you
 read the official Jekyll tutorial. When you run it, the first page it showed is ugly and simple, but
 at least it worked.
@@ -44,6 +44,6 @@ at least it worked.
 then clone the `blogs` repository to my local computer, copy all the files in minima repository to the `blogs`
 repository, changed some files(you don't need to do this at first), then pushed the local `blogs` repository
 to the `blogs` repository on Github(to the master branch directly). Now if you access
-the Github page of `blogs` repository, you will see the first page your blog.<br/>
+the Github page of `blogs` repository, you will see the first page of your blog.<br/>
 **Note:**<br/>
 *when you name your repository with letters, don't use - or other wired characters, otherwise you may have problem when you try to access the Github page of your repository*
