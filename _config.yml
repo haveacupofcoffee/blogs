@@ -11,6 +11,7 @@ cvJsPath : "/assets/js/cv/"
 resourcesPath : "/assets/resources/"
 show_excerpts: false # set to true to show excerpts on the homepage
 cvImgSubPath: "cv/"
+gitURL: "https://github.com/haveacupofcoffee/testblogs/blob/master/"
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this

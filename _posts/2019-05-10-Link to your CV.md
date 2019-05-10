@@ -5,7 +5,7 @@ subPath : "2019-05-10/"
 ---
 
 {% assign filepath = site.gitRepositoryURL | append : site.resourcesPath | append : page.subPath %}
-{% assign layoutfilePath = site.gitURL | append : "\_layouts/" %}
+{% assign layoutfilePath = site.gitURL | append : "/\_layouts/" %}
 {% assign projectPath = site.gitURL | append : "/" %}
 
 &emsp; Hej,Hej! geeks and nerds. In the last post I introduced how to write your blog with Jekyll and Github page. It's time to link to your CV unless you have concerns about your privacy.
@@ -17,7 +17,7 @@ subPath : "2019-05-10/"
 
 ### 2.Add CV files to the project
 &emsp; To add the CV files to the blog, we need to follow the structure of the project. Here we add file `cv.html` in `_layout` folder. This file is the layout template of the CV. To simplify at the beginning, I didn't set the layout value of this file as default. The `cv.file` uses the structure of the `index.html` from the original CV template you downloaded from the above link. You could check this flie by clicking the link below:<br/>
-[cv.html]({{ layoutfilePath | append : "cv.html"}})
+[cv.html]({{ layoutfilePath | append : "cv.html"}})<br/>
 &emsp; The `cv.html` is just the presentation of the CV, I put the content of the CV in `englishcv.md` file. In this file, I defined the `title` varaible to `CV(EN)` which will be showed in the navigation bar as my CV navigation link.
 To check this file, click the link below:<br/>
 [englishcv.md]({{ projectPath | append : "englishcv.md"}})
