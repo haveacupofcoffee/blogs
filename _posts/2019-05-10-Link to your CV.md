@@ -13,14 +13,14 @@ subPath : "2019-05-10/"
 &emsp; To write a CV, the content of the CV is important, but the structure and the appearance is more important. You have to make it organized to give the viewer a great first impression. There are many CV templates online, using them will make your work easier.
 ### 1.CV template
 &emsp; You could download the original CV template I am using from the link below:
-[download the CV template files]({{ filepath | append : "cvtempalte.zip"})
+[download the CV template files]({{ filepath | append : "cvtempalte.zip"}})
 
 ### 2.Add CV files to the project
 &emsp; To add the CV files to the blog, we need to follow the structure of the project. Here we add file `cv.html` in `_layout` folder. This file is the layout template of the CV. To simplify at the beginning, I didn't set the layout value of this file as default. The `cv.file` uses the structure of the `index.html` from the original CV template you downloaded from the above link. You could check this flie by clicking the link below:
-[cv.html]({{ layoutfilePath | append : "cv.html"})
+[cv.html]({{ layoutfilePath | append : "cv.html"}})
 &emsp; The `cv.html` is just the presentation of the CV, I put the content of the CV in `englishcv.md` file. In this file, I defined the `title` varaible to `CV(EN)` which will be showed in the navigation bar as my CV navigation link.
 To check this file, click the link below:
-[englishcv.md]({{ projectPath | append : "englishcv.md"})
+[englishcv.md]({{ projectPath | append : "englishcv.md"}})
 ### 3. Problems need to be fixed later
 We added CV files in the project, if you try it, it works well. But there are some problems we need to fix later.
 - `cv.html`: this file has its own css and js scripts. and it didn't use the default layout, that's why when we redirect to the CV page, there is no navigation bar and footer bar like other blog pages. We need to fix this later.
