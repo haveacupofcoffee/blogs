@@ -8,6 +8,7 @@ gitRepositoryURL: "/testblogs"
 imgPathOne: "/assets/images/"
 cvCssPath : "/assets/css/cv/"
 cvJsPath : "/assets/js/cv/"
+resourcesPath : "/assets/resources/"
 show_excerpts: false # set to true to show excerpts on the homepage
 cvImgSubPath: "cv/"
 
