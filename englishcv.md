@@ -93,7 +93,7 @@ skills :
     - JavaScript
     - Python flask
     - JAVA
-certificaitons :
+certifications :
   -
     name : AWS Certified Solutions Architect - Associate (SAA)
     link : https://my-aws-certification.s3.ca-central-1.amazonaws.com/AWS+Certified+Solutions+Architect+-+Associate+certificate.pdf
