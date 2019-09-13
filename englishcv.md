@@ -3,9 +3,9 @@ title : CV(EN)
 layout : cv
 myname: Daolong Qiu
 jobtitle : Programmer
-ad : High-tech zone, Chengdu City
+ad : 14 Paisley Avenue, Toronto, ON
 mail : qdaolong@126.com
-tel : +86 17780015153
+tel : (647)676-4202
 web: https://haveacupofcoffee.github.io/blogs/
 educations :
  -
@@ -73,7 +73,7 @@ projectexperience :
  -
    period : Sep 2012 - Jan 2013
    projectname : Smart House
-   location : Shanghai
+   location : Sweden
    companyweb :
    occupation : Software Engineer
    duties :
@@ -93,4 +93,12 @@ skills :
     - JavaScript
     - Python flask
     - JAVA
+certificaitons :
+  -
+    name : AWS Certified Solutions Architect - Associate (SAA)
+    link : https://my-aws-certification.s3.ca-central-1.amazonaws.com/AWS+Certified+Solutions+Architect+-+Associate+certificate.pdf
+  -
+    name: AWS Certified Cloud Practitioner (CLF)
+    link: https://my-aws-certification.s3.ca-central-1.amazonaws.com/AWS+Certified+Cloud+Practitioner+certificate.pdf
+
 ---

@@ -76,6 +76,20 @@
           <p>Live happily, work professionally</p>
         </div>
 			-->
+			<!-- Certifications-->
+
+			<div class="entry">
+				<h2>CERTIFICATIONS</h2>
+
+				<div class="content">
+					<ul class="info">
+						{% for certification in page.certifications %}
+						<li><a href="{{ certification.link }}">{{ certification.name }}</a></li>
+						{% endfor %}
+					</ul>
+				</div>
+				{% endfor %}
+			</div>
         <!--EDUCATION -->
         <div class="entry">
           <h2>EDUCATION</h2>
@@ -142,7 +156,7 @@
 				</div>
 				<!-- End 5rd Row -->
 
-        <!-- Begin 4th Row -->
+        <!-- SKILLS -->
         <div class="entry">
           <h2>SKILLS</h2>
 					{% for skill in page.skills %}
@@ -156,7 +170,7 @@
           </div>
           {% endfor %}
 
-        <!-- End 4th Row -->
+        <!-- End SKILLS -->
          <!-- Begin 5th Row -->
 				<!--
         <div class="entry">
