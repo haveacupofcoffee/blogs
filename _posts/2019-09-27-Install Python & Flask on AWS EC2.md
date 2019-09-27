@@ -12,7 +12,7 @@ imgPathTwo : "2019-09-27/"
 ### 1.Outline
 1) How to install openssl
 &emsp; when you install flask with pip3 commands, if you have the problem below, you need to install a new version of openssl. You could find answer how to install openssl in this post.
-![]({{ imgpath | append : "img1.jpg"  }})<br/>
+![]({{ imgpath | append : "img1.png"  }})<br/>
 2) A bash script you could use to install python3 and flask when you launch an EC2 instance or after you launched an EC2 instance.
 
 *Note: Remember to run all commands or bash script with root user*
