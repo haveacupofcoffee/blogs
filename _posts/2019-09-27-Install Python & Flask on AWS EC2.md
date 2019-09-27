@@ -43,7 +43,7 @@ After you finish, run `openssl version` to check if the new version of openssl h
 
 ### 3. A bash script to do the job
 &emsp;To make the job easier, here I provide a bash script to do all the job. Make sure the linux system you are using supports `yum` command. Otherwise you need to change the `yum` command in the script.<br/>
-&emsp;You could download the script file from here [pythonflaskinstallbashscript](https://my-samplecode.s3.ca-central-1.amazonaws.com/bashscript/pythonflaskinstall.sh)<br/>
+&emsp;You could download the script file from here [download pythonflaskinstallbashscript](https://my-samplecode.s3.ca-central-1.amazonaws.com/bashscript/pythonflaskinstall.sh)<br/>
 &emsp; You could choose to execute the bash script when you launch an EC2 instance. On Step3:Configure Instance Details, at the bottom page choose the file you wanna to execute when you launch EC2 instance.
 ![]({{ imgpath | append : "img2.png"  }})<br/>
 *Note: Even you choose this way, still it will take 10-20 minutes(maybe shorter, maybe longer) to prepare the environment*<br/>
