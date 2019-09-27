@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Connect to PostgreSQL on AWS RDS with Python
+title : Install Python & Flask on AWS EC2
 subPath : "2019-09-27/"
 ---
 
