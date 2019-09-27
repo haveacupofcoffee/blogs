@@ -1,12 +1,10 @@
 ---
 layout : post
 title : Install Python & Flask on AWS EC2
-subPath : "2019-09-27/"
+imgPathTwo : "2019-09-27/"
 ---
 
-{% assign filepath = site.gitRepositoryURL | append : site.resourcesPath | append : page.subPath %}
-{% assign layoutfilePath = site.gitRepositoryURL | append : "/\_layout/" %}
-{% assign projectPath = site.gitRepositoryURL | append : "/" %}
+{% assign imgpath = site.gitRepositoryURL | append : site.imgPathOne | append: page.imgPathTwo %}
 
 ### 1.Introduction
 &emsp; Hola! geeks and nerds. In this post I will introduce how to install python3 and flask on EC2. I know I have written a similar post before([Run your first flask application on AWS EC2](https://haveacupofcoffee.github.io/blogs/2019/01/20/Run-Your-first-flask-program-on-AWS-EC2.html)), but when I follow the steps, I met some problems. Like openssl version is too old for pip3 that you can't run pip3 commands. I don't have much space on my computer SSD and I really don't want to install VM on my computer as it's too heavy. So I used AWS EC2 as an example. It's free(Has one year free program) and very convenient.
