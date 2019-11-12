@@ -1,104 +1,113 @@
 ---
 title : CV(EN)
 layout : cv
-myname: Daolong Qiu
-jobtitle : Programmer
+myname: DAOLONG QIU
+jobtitle : Software Engineer
 ad : 14 Paisley Avenue, Toronto, ON
 mail : qdaolong@126.com
 tel : (647)676-4202
 web: https://haveacupofcoffee.github.io/blogs/
+
+certifications :
+  -
+    period: Sep 2019
+    name : AWS Certified Solutions Architect - Associate (SAA)
+    link : https://my-aws-certification.s3.ca-central-1.amazonaws.com/AWS+Certified+Solutions+Architect+-+Associate+certificate.pdf
+  -
+    period: Oct 2019
+    name: AWS Certified SysOps Administrator - Associate
+    link: https://my-aws-certification.s3.ca-central-1.amazonaws.com/AWS+Certified+SysOps+Administrator+-+Associate+certificate.pdf
+
 educations :
  -
-    period : Sep 2012 - Jul 2013
+    period : Aug 2012 - June 2013
     university : Kristianstad university
-    univCountry : Sweden
-    major : Master in Embedded Systems Design
+    univCountry : , Kristianstad, Sweden
+    major : Master of Science in Embedded Systems
  -  
-    period : Sep 2005 - Jul 2009
+    period : Sep 2005 - June 2009
     university : Xinjiang University
-    univCountry : China
+    univCountry : , Xinjiang, China
     major : Bachelor of Software Engineering    
+
 workexperience :
  -
-    period : Jan 2014 - Pre
+    period : Jan 2014 - July 2019
     company : TD Tech
-    location : Chengdu
+    location : , Chengdu, China
     companyweb : http://www.td-tech.com/
-    occupation : Pre-sales Consultant
+    occupation : Technical Consultant
     duties :
-      - Pre-sales Consultant:Responsible for the southwest & northwest area of intelligent photovoltaic solutions. Manage and    work with channel partners to provide end-to-end solutions for customers, guide customers to recognize the overall solution values
-      - Project expansion:Responsible for outputting presentations and solutions and communicating with customers to explain the overall solutions. Supported the Shanghai SNEC and other large-scale exhibition with channel partners
-      - Project requirements:Responsible for collecting customers and channel partners needs，Coordination of internal product line of the various departments to match market needs with company products and solutions
-      - Project management:Responsible for signing the project contract and delivery. Work with channels to provide high quality service
+      - Managed and cooperated with solution partners to provide end-to-end solutions for customers, guided customers to recognize the overall solution values
+      - Installed and tested solution system (software and hardware) for customers
+      - Trained customers to understand the system and how to use it. Collected requests of new features and reported back to company
  -
     period : Jan 2012 - July 2012
     company : Digital China
-    location :
+    location : , Shanghai, China
     companyweb : http://www.digitalchina.com/
     occupation : Software Engineer
     duties :
-     - Arrive at company 30 minutes earlier every day, arrange and publish new system patch, maintain 6 severs (Linux and Windows)
-     - Develop new request; Fix Bugs; Maintain the environment deployment document
- -
-    period : Jul 2009 - Dec 2011
-    company : New Stream Institution
-    location :
+     - Maintained 6 on-premises severs (Linux and Windows), deployed new system patches
+     - Developed new features and fixed bugs
+
+    period : July 2009 - Dec 2011
+    company : New Dream Institution
+    location : , Liaocheng, China
     companyweb :
-    occupation : Course Consultant
+    occupation : IT Support Engineer  
     duties :
-     - Course Sales:Responsible for training course sales to achieve sale targets
-     - Teaching management:Responsible for teacher recruitment and management training. Up to 1,000 students and 60 teachers during winter and summer classes.
+     - Installed and configured computer hardware, software, systems, networks, printers and scanners
+     - Responded in a timely manner to service issues and requests
+     - Taught basic computer knowledge to students
+
 internexperience :
  -
    period : Sep 2013 - Dec 2013
    company : Hewlett-Packard(HP)
-   location : Shanghai
+   location : , Shanghai, China
    companyweb :
-   occupation : Quality Assurance
+   occupation : Quality Assurance Engineer
    duties :
-     - Test HP software Service Manager
-     - Use Quality Center as the quality management processes tool
+     - Tested HP software Service Manager with black-box testing methods
+     - Used Quality Center as the quality management processes tool
+
 projectexperience :
  -
-   period : Mar 2013 - June 2013
-   projectname : Demola
-   location : Sweden
-   companyweb : https://www.demola.net/
-   occupation : Software Engineer
-   duties :
-    - A project made by Sweden LUND University DEMOLA and MyThing Company. Design an Android Robot with two wheels
-    - Job:1)Develop Android Robot APP and Remote Control APP  (2000-3000  JAVA)
-        2)Program Microcontroller (200 C)
-    - Main Techniques:Android, Microcontroller PWM，PID controller，TCP/IP transmission
- -
-   period : Sep 2012 - Jan 2013
-   projectname : Smart House
-   location : Sweden
+   period : Mar 2013 – June 2013
+   projectname : My Thing-An Android phone based Robot Design and Exploration
+   location : , LUND University, Lund, Sweden
    companyweb :
    occupation : Software Engineer
    duties :
-     - Control lamps, fans and curtains etc. through mobile phone and Kinects. Monitor the temperature and humidity etc. of rooms.
-     - Job:Responsible for the communication of Java Bluetooth and devices (1000 -2000 JAVA)
-     - Main Techniques:JAVA, Android, MySQL, Arduino Microcontroller Processing
-skills :
+    - Co-designed an Android Robot with two wheels
+    - Developed an Android robot APP, a remote-control APP and a microcontroller program
+
  -
-   skilltype : Software Knowledge
-   skillnames :
-    - Git
+   period : Sep 2012 – Jan 2013
+   projectname : Smart House
+   location : , HKR University, Sweden
+   companyweb :
+   occupation : Software Engineer
+   duties :
+     - Developed a smart house program with functionalities of controlling lamps, fans and curtains etc. through mobile phone and Kinects. monitoring the temperature and humidity etc. of rooms
+skills :
  -
    skilltype : Languages
    skillnames :
+    - English(Fluent)
+    - Mandarin(Fluent)
+ -
+   skilltype : Development
+   skillnames :
     - Python
+    - AWS
+    - SQL
     - CSS/HMTL
     - JavaScript
     - Python flask
+    - Git
     - JAVA
-certifications :
-  -
-    name : AWS Certified Solutions Architect - Associate (SAA)
-    link : https://my-aws-certification.s3.ca-central-1.amazonaws.com/AWS+Certified+Solutions+Architect+-+Associate+certificate.pdf
-  -
-    name: AWS Certified Cloud Practitioner (CLF)
-    link: https://my-aws-certification.s3.ca-central-1.amazonaws.com/AWS+Certified+Cloud+Practitioner+certificate.pdf
+
 
 ---

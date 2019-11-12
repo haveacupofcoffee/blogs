@@ -58,6 +58,7 @@
           <div class="social">
             <ul>
 							<!--check if the pdf download works later,maybe change the icons to right a little bit -->
+							<!--
               <li><a class='north' href="#" title="Download .pdf"><img src="{{ imgPath | append : 'icn-save.jpg'}}" alt="Download the pdf version" /></a></li>
               <li><a class='north' href="javascript:window.print()" title="Print"><img src="{{ imgPath | append : 'icn-print.jpg'}}" alt="" /></a></li>
               <li><a class='north' id="contact" href="contact/index.html" title="Contact Me"><img src="{{ imgPath | append : 'icn-contact.jpg'}}" alt="" /></a></li>
@@ -80,11 +81,13 @@
 
 			<div class="entry">
 				<h2>CERTIFICATIONS</h2>
-					<ul class="info">
-						{% for certification in page.certifications %}
-						<li><a href="{{ certification.link }}" target="_blank">{{ certification.name }}</a></li>
-						{% endfor %}
-					</ul>
+				{% for certification in page.certifications %}
+				<div class="content">
+					<h3>{{ certification.period }}</h3>
+					<p><a href="{{ certification.link }}" target="_blank">{{ certification.name }}</a></p>
+				</div>
+				{% endfor %}
+
 			</div>
         <!--EDUCATION -->
         <div class="entry">
