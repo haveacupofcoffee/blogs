@@ -22,19 +22,19 @@ educations :
  -
     period : Aug 2012 - June 2013
     university : Kristianstad university
-    univCountry : , Kristianstad, Sweden
+    univCountry : Kristianstad, Sweden
     major : Master of Science in Embedded Systems
  -  
     period : Sep 2005 - June 2009
     university : Xinjiang University
-    univCountry : , Xinjiang, China
+    univCountry : Xinjiang, China
     major : Bachelor of Software Engineering    
 
 workexperience :
  -
     period : Jan 2014 - July 2019
     company : TD Tech
-    location : , Chengdu, China
+    location : Chengdu, China
     companyweb : http://www.td-tech.com/
     occupation : Technical Consultant
     duties :
@@ -44,7 +44,7 @@ workexperience :
  -
     period : Jan 2012 - July 2012
     company : Digital China
-    location : , Shanghai, China
+    location : Shanghai, China
     companyweb : http://www.digitalchina.com/
     occupation : Software Engineer
     duties :
@@ -53,7 +53,7 @@ workexperience :
 
     period : July 2009 - Dec 2011
     company : New Dream Institution
-    location : , Liaocheng, China
+    location : Liaocheng, China
     companyweb :
     occupation : IT Support Engineer  
     duties :
@@ -65,7 +65,7 @@ internexperience :
  -
    period : Sep 2013 - Dec 2013
    company : Hewlett-Packard(HP)
-   location : , Shanghai, China
+   location : Shanghai, China
    companyweb :
    occupation : Quality Assurance Engineer
    duties :
@@ -76,7 +76,7 @@ projectexperience :
  -
    period : Mar 2013 – June 2013
    projectname : My Thing-An Android phone based Robot Design and Exploration
-   location : , LUND University, Lund, Sweden
+   location : LUND University, Lund, Sweden
    companyweb :
    occupation : Software Engineer
    duties :
@@ -86,7 +86,7 @@ projectexperience :
  -
    period : Sep 2012 – Jan 2013
    projectname : Smart House
-   location : , HKR University, Sweden
+   location : HKR University, Sweden
    companyweb :
    occupation : Software Engineer
    duties :
@@ -108,6 +108,5 @@ skills :
     - Python flask
     - Git
     - JAVA
-
 
 ---
