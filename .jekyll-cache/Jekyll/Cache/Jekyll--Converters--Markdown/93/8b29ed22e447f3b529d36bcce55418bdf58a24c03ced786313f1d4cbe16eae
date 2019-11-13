@@ -1,0 +1,44 @@
+I"�
+<h3 id="1introduction">1.Introduction</h3>
+<p>  Hola! geeks and nerds. In this post I will introduce how to install python3 and flask on EC2. I know I have written a similar post before(<a href="https://haveacupofcoffee.github.io/blogs/2019/01/20/Run-Your-first-flask-program-on-AWS-EC2.html">Run your first flask application on AWS EC2</a>).But when I followed the steps, I met some problems, like openssl version is too old for pip3 that you can’t run pip3 command. I don’t have much space on my computer SSD and I really don’t want to install VM on my computer as it’s too heavy. So I used AWS EC2 as an example. It’s free(Has one year free program) and very convenient.</p>
+
+<h3 id="1outline">1.Outline</h3>
+<p>1) How to install openssl <br />
+  When you install flask with pip3 command, if you have the problem below, you need to install a new version of openssl. You could find answer of how to install openssl in this post.
+<img src="/assets/images/2019-09-27/img1.png" alt="" /><br />
+2) A bash script you could use to install python3 and flask when you launch an EC2 instance or after you launch an EC2 instance.</p>
+
+<p><em>Note: Remember to run all commands or the bash script with root user</em></p>
+<h3 id="2how-to-install-openssl">2.How to install openssl</h3>
+<p>  Before you install openssl, use <code class="highlighter-rouge">openssl version</code> to check if the system has a default version of openssl.If the system doesn’t have a default openssl or the version is too old, install a newer version of openssl. You could find openssl release version from <a href="https://www.openssl.org/source/">openssl webpage</a>. Here I am using the version <code class="highlighter-rouge">1.1.1d</code>.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://www.openssl.org/source/openssl-1.1.1d.tar.gz
+tar -zxvf openssl-1.1.1d.tar.gz
+cd openssl-1.1.1d
+./config
+make
+make install
+</code></pre></div></div>
+<p>Back up the old version openssl command, if the system doesn’t have a default openssl that had been installed. Skip this step.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv /usr/bin/openssl /usr/bin/openssl.bak
+</code></pre></div></div>
+<p>link to the new openssl command, the default installing folder is /usr/local/bin</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ln -s /usr/local/bin/openssl /usr/bin/openssl
+</code></pre></div></div>
+<p>change system configuration</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "/usr/local/lib64" &gt;&gt; /etc/ld.so.conf
+ldconfig -v
+</code></pre></div></div>
+<p>After you finish, run <code class="highlighter-rouge">openssl version</code> to check if the new version of openssl has been installed successfully.</p>
+
+<h3 id="3-a-bash-script-to-do-the-job">3. A bash script to do the job</h3>
+<p> To make the job easier, here I provide a bash script to do the job. Make sure the linux system you are using supports <code class="highlighter-rouge">yum</code> command. Otherwise you need to change the <code class="highlighter-rouge">yum</code> command in the script.<br />
+ You could download the script file from here <a href="https://my-samplecode.s3.ca-central-1.amazonaws.com/bashscript/pythonflaskinstall.sh">pythonflaskinstallbashscript</a>.<br />
+ You could choose to execute the bash script when you launch an EC2 instance. On Step3:Configure Instance Details, at the bottom of the page choose the file you want to execute when you launch EC2 instance.
+<img src="/assets/images/2019-09-27/img2.png" alt="" /><br />
+<em>Note: Even you choose this way, it will still take 10-20 minutes(maybe shorter, maybe longer) to prepare the environment.</em><br />
+  You could use commands below to check if python and flask are installed successfully.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl version
+python3 --version
+flask --version
+</code></pre></div></div>
+:ET

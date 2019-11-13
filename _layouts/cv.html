@@ -43,7 +43,7 @@
           <!-- End Image -->
           <!-- Begin Personal Information -->
           <div class="self">
-            <h1 class="name">{{ page.myname }}<br />
+            <h1 class="name" id="gotop">{{ page.myname }}<br />
               <span>{{ page.jobtitle }}</span></h1>
             <ul>
               <li class="ad">{{ page.ad }}</li>
@@ -95,7 +95,7 @@
 					{% for education in page.educations %}
           <div class="content">
             <h3>{{ education.period }}</h3>
-            <p>{{ education.university }} , {{ education.univCountry}} <br />
+            <p><a href="{{education.univWeb}}">{{ education.university }}</a>, {{ education.univCountry}} <br />
               <em>{{ education.major }}</em></p>
           </div>
 					{% endfor %}
@@ -107,7 +107,11 @@
 					{% for experience in page.workexperience %}
           <div class="content">
             <h3>{{ experience.period }}</h3>
-            <p><a href="{{ experience.companyweb }}">{{ experience.company }}</a> {{ experience.location }}<br />
+						{% if experience.companyweb %}
+            	<p><a href="{{ experience.companyweb }}">{{ experience.company }}</a>, {{ experience.location }}<br />
+						{% else %}
+							<p>{{ experience.company }}, {{ experience.location }}<br />
+						{% endif %}
               <em>{{ experience.occupation }}</em></p>
             <ul class="info">
 							{% for duty in experience.duties %}
@@ -125,7 +129,7 @@
 					{% for experience in page.internexperience %}
 					<div class="content">
 						<h3>{{ experience.period }}</h3>
-						<p><a href="">{{ experience.company }}(HP)</a>, {{ experience.location }}<br />
+						<p><a href="{{ experience.companyweb }}">{{ experience.company }}</a>, {{ experience.location }}<br />
 							<em>{{ experience.occupation }}</em></p>
 						<ul class="info">
 							{% for duty in experience.duties %}
@@ -143,7 +147,11 @@
 					{% for experience in page.projectexperience %}
 					<div class="content">
 						<h3>{{ experience.period }}</h3>
-						<p><a href="{{ experience.companyweb }}">{{ experience.projectname }}</a>,{{experience.location}}<br />
+						{% if experience.projectweb %}
+							<p><a href="{{ experience.projectweb }}">{{ experience.projectname }}</a>, {{experience.location}}<br />
+						{% else %}
+							<p>{{ experience.projectname }}, {{experience.location}}<br />
+						{% endif %}
 							<em>{{ experience.occupation }}</em></p>
 						<ul class="info">
 							{% for duty in experience.duties %}
@@ -198,7 +206,7 @@
   <div class="wrapper-bottom"></div>
 </div>
 -->
-<div id="message"><a href="#top" id="top-link">Go to Top</a></div>
+<div id="message"><a href="#wrapperCV" id="top-link" type="_blank">Go to Top</a></div>
 <!-- End Wrapper -->
 </body>
 </html>
