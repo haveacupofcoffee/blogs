@@ -42,7 +42,7 @@ workexperience :
     duties :
       - Managed and cooperated with solution partners to provide end-to-end solutions for customers, guided customers to recognize the overall solution values
       - Installed and tested solution system (software and hardware) for customers
-      - Trained customers to understand the system and how to use it Collected requests of new features and reported back to company
+      - Trained customers to understand the system and how to use it. Collected requests of new features and reported back to company
  -
     period : Jan 2012 - July 2012
     company : Digital China
