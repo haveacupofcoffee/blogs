@@ -108,7 +108,7 @@
           <div class="content">
             <h3>{{ experience.period }}</h3>
 						{% if experience.companyweb %}
-            	<p><a href="{{ experience.companyweb }}">{{ experience.company }}</a>, {{ experience.location }}<br />
+            	<p><a href="{{ experience.companyweb }}" target="_blank">{{ experience.company }}</a>, {{ experience.location }}<br />
 						{% else %}
 							<p>{{ experience.company }}, {{ experience.location }}<br />
 						{% endif %}
@@ -129,7 +129,7 @@
 					{% for experience in page.internexperience %}
 					<div class="content">
 						<h3>{{ experience.period }}</h3>
-						<p><a href="{{ experience.companyweb }}">{{ experience.company }}</a>, {{ experience.location }}<br />
+						<p><a href="{{ experience.companyweb }}" target="_blank">{{ experience.company }}</a>, {{ experience.location }}<br />
 							<em>{{ experience.occupation }}</em></p>
 						<ul class="info">
 							{% for duty in experience.duties %}
@@ -148,7 +148,7 @@
 					<div class="content">
 						<h3>{{ experience.period }}</h3>
 						{% if experience.projectweb %}
-							<p><a href="{{ experience.projectweb }}">{{ experience.projectname }}</a>, {{experience.location}}<br />
+							<p><a href="{{ experience.projectweb }}" target="_blank">{{ experience.projectname }}</a>, {{experience.location}}<br />
 						{% else %}
 							<p>{{ experience.projectname }}, {{experience.location}}<br />
 						{% endif %}
