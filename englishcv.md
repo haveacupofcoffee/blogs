@@ -24,23 +24,25 @@ educations :
     university : Kristianstad university
     univCountry : Kristianstad, Sweden
     major : Master of Science in Embedded Systems
+    univWeb: https://www.hkr.se/en/
  -  
     period : Sep 2005 - June 2009
     university : Xinjiang University
     univCountry : Xinjiang, China
-    major : Bachelor of Software Engineering    
+    major : Bachelor of Software Engineering
+    univWeb: http://www.xju.edu.cn/    
 
 workexperience :
  -
     period : Jan 2014 - July 2019
     company : TD Tech
     location : Chengdu, China
-    companyweb : http://www.td-tech.com/
+    companyweb : http://www.td-tech.com/en/
     occupation : Technical Consultant
     duties :
       - Managed and cooperated with solution partners to provide end-to-end solutions for customers, guided customers to recognize the overall solution values
       - Installed and tested solution system (software and hardware) for customers
-      - Trained customers to understand the system and how to use it. Collected requests of new features and reported back to company
+      - Trained customers to understand the system and how to use it Collected requests of new features and reported back to company
  -
     period : Jan 2012 - July 2012
     company : Digital China
@@ -50,7 +52,7 @@ workexperience :
     duties :
      - Maintained 6 on-premises severs (Linux and Windows), deployed new system patches
      - Developed new features and fixed bugs
-
+ -
     period : July 2009 - Dec 2011
     company : New Dream Institution
     location : Liaocheng, China
@@ -66,7 +68,7 @@ internexperience :
    period : Sep 2013 - Dec 2013
    company : Hewlett-Packard(HP)
    location : Shanghai, China
-   companyweb :
+   companyweb : https://www8.hp.com/cn/zh/home.html
    occupation : Quality Assurance Engineer
    duties :
      - Tested HP software Service Manager with black-box testing methods
@@ -75,19 +77,18 @@ internexperience :
 projectexperience :
  -
    period : Mar 2013 – June 2013
-   projectname : My Thing-An Android phone based Robot Design and Exploration
-   location : LUND University, Lund, Sweden
-   companyweb :
+   projectname : Demola
+   location : Lund, Sweden
+   projectweb : https://www.demola.net/
    occupation : Software Engineer
    duties :
     - Co-designed an Android Robot with two wheels
     - Developed an Android robot APP, a remote-control APP and a microcontroller program
-
  -
    period : Sep 2012 – Jan 2013
    projectname : Smart House
-   location : HKR University, Sweden
-   companyweb :
+   location : HKR University, Kristianstad, Sweden
+   projectweb :
    occupation : Software Engineer
    duties :
      - Developed a smart house program with functionalities of controlling lamps, fans and curtains etc. through mobile phone and Kinects. monitoring the temperature and humidity etc. of rooms
