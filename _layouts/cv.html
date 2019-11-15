@@ -37,14 +37,17 @@
     <div id="paper">
       <div class="paper-top"></div>
       <div id="paper-mid">
-        <div class="entry">
-          <!-- Begin Image --> <!-- need to change to the img of myself-->
-          <img class="portrait" src="{{ imgPath | append : 'image.jpg'}}" alt="Qiu Daolong" />
+				<div class="entry">
+
+          <!-- Begin Image -->
+          <img class="portrait" src="{{ imgPath | append : 'image.jpg'}}" alt="DAOLONG QIU" />
           <!-- End Image -->
+
           <!-- Begin Personal Information -->
           <div class="self">
             <h1 class="name">{{ page.myname }}<br />
-              <span>{{ page.jobtitle }}</span></h1>
+              <span>{{ page.jobtitle }}</span>
+						</h1>
             <ul>
               <li class="ad">{{ page.ad }}</li>
               <li class="mail">{{ page.mail }}</li>
@@ -54,53 +57,59 @@
             </ul>
           </div>
           <!-- End Personal Information -->
+
           <!-- Begin Social -->
+					<!--
           <div class="social">
             <ul>
-							<!--check if the pdf download works later,maybe change the icons to right a little bit -->
-							<!--
               <li><a class='north' href="#" title="Download .pdf"><img src="{{ imgPath | append : 'icn-save.jpg'}}" alt="Download the pdf version" /></a></li>
               <li><a class='north' href="javascript:window.print()" title="Print"><img src="{{ imgPath | append : 'icn-print.jpg'}}" alt="" /></a></li>
               <li><a class='north' id="contact" href="contact/index.html" title="Contact Me"><img src="{{ imgPath | append : 'icn-contact.jpg'}}" alt="" /></a></li>
-							<!-- No twitter and facebook so far
               <li><a class='north' href="#" title="Follow me on Twitter"><img src="images/icn-twitter.jpg" alt="" /></a></li>
               <li><a class='north' href="#" title="My Facebook Profile"><img src="images/icn-facebook.jpg" alt="" /></a></li>
-						-->
             </ul>
           </div>
+					-->
           <!-- End Social -->
+
         </div>
-        <!-- Begin 1st Row -->
+
+        <!-- OBJECTIVE -->
 				<!--
         <div class="entry">
           <h2>OBJECTIVE</h2>
           <p>Live happily, work professionally</p>
         </div>
 			-->
-			<!-- Certifications-->
+				<!-- END OBJECTIVE -->
 
-			<div class="entry">
-				<h2>CERTIFICATIONS</h2>
-				{% for certification in page.certifications %}
-				<div class="content">
-					<h3>{{ certification.period }}</h3>
-					<p><a href="{{ certification.link }}" target="_blank">{{ certification.name }}</a></p>
+				<!--Begin CERTIFICATIONS -->
+				<div class="entry">
+					<h2>CERTIFICATIONS</h2>
+					{% for certification in page.certifications %}
+					<div class="content">
+						<h3>{{ certification.period }}</h3>
+						<p><a href="{{ certification.link }}" target="_blank">{{ certification.name }}</a></p>
+					</div>
+					{% endfor %}
 				</div>
-				{% endfor %}
+				<!-- End CERTIFICATIONS -->
 
-			</div>
-        <!--EDUCATION -->
+        <!--Begin EDUCATION -->
         <div class="entry">
           <h2>EDUCATION</h2>
 					{% for education in page.educations %}
           <div class="content">
             <h3>{{ education.period }}</h3>
-            <p><a href="{{education.univWeb}}" target="_blank">{{ education.university }}</a>, {{ education.univCountry}} <br />
-              <em>{{ education.major }}</em></p>
+            <p>
+							<a href="{{education.univWeb}}" target="_blank">{{ education.university }}</a>, {{ education.univCountry}} <br />
+              <em>{{ education.major }}</em>
+						</p>
           </div>
 					{% endfor %}
         </div>
         <!-- End EDUCATION -->
+
         <!-- Begin WORK EXPERIENCE -->
         <div class="entry">
           <h2>WORK EXPERIENCE</h2>
@@ -108,11 +117,13 @@
           <div class="content">
             <h3>{{ experience.period }}</h3>
 						{% if experience.companyweb %}
-            	<p><a href="{{ experience.companyweb }}" target="_blank">{{ experience.company }}</a>, {{ experience.location }}<br />
+            <p>
+							<a href="{{ experience.companyweb }}" target="_blank">{{ experience.company }}</a>, {{ experience.location }}<br />
 						{% else %}
-							<p>{{ experience.company }}, {{ experience.location }}<br />
+						<p>{{ experience.company }}, {{ experience.location }}<br />
 						{% endif %}
-              <em>{{ experience.occupation }}</em></p>
+              <em>{{ experience.occupation }}</em>
+						</p>
             <ul class="info">
 							{% for duty in experience.duties %}
   						<li>{{ duty }}</li>
@@ -121,16 +132,18 @@
           </div>
 					{% endfor %}
         </div>
-        <!-- End 3rd Row -->
+        <!-- End WORK EXPERIENCE -->
 
-				<!-- Begin 4rd Row INTERNSHIP EXPERIENCE -->
+				<!-- Begin INTERNSHIP EXPERIENCE -->
 				<div class="entry">
 					<h2>INTERNSHIP EXPERIENCE</h2>
 					{% for experience in page.internexperience %}
 					<div class="content">
 						<h3>{{ experience.period }}</h3>
-						<p><a href="{{ experience.companyweb }}" target="_blank">{{ experience.company }}</a>, {{ experience.location }}<br />
-							<em>{{ experience.occupation }}</em></p>
+						<p>
+							<a href="{{ experience.companyweb }}" target="_blank">{{ experience.company }}</a>, {{ experience.location }}<br />
+							<em>{{ experience.occupation }}</em>
+						</p>
 						<ul class="info">
 							{% for duty in experience.duties %}
 							<li>{{ duty }}</li>
@@ -139,20 +152,22 @@
 					</div>
 					{% endfor %}
 				</div>
-				<!-- End 4rd Row -->
+				<!-- End INTERNSHIP EXPERIENCE -->
 
-				<!-- Begin 5rd Row PROJECT EXPERIENCE -->
+				<!-- Begin PROJECT EXPERIENCE -->
 				<div class="entry">
 					<h2>PROJECT EXPERIENCE</h2>
 					{% for experience in page.projectexperience %}
 					<div class="content">
 						<h3>{{ experience.period }}</h3>
 						{% if experience.projectweb %}
-							<p><a href="{{ experience.projectweb }}" target="_blank">{{ experience.projectname }}</a>, {{experience.location}}<br />
+						<p>
+							<a href="{{ experience.projectweb }}" target="_blank">{{ experience.projectname }}</a>, {{experience.location}}<br />
 						{% else %}
-							<p>{{ experience.projectname }}, {{experience.location}}<br />
+						<p>{{ experience.projectname }}, {{experience.location}}<br />
 						{% endif %}
-							<em>{{ experience.occupation }}</em></p>
+							<em>{{ experience.occupation }}</em>
+						</p>
 						<ul class="info">
 							{% for duty in experience.duties %}
 							<li>{{ duty }}</li>
@@ -161,9 +176,9 @@
 					</div>
 					{% endfor %}
 				</div>
-				<!-- End 5rd Row -->
+				<!-- End PROJECT EXPERIENCE -->
 
-        <!-- SKILLS -->
+        <!-- Begin SKILLS -->
         <div class="entry">
           <h2>SKILLS</h2>
 					{% for skill in page.skills %}
@@ -176,36 +191,48 @@
             </ul>
           </div>
           {% endfor %}
+				</div>
+				<!-- End SKILLS -->
 
-        <!-- End SKILLS -->
-         <!-- Begin 5th Row -->
+				<!-- Begin ADDITIONAL ONLINE TRAINING -->
+				<div class="entry">
+					<h2>ADDITIONAL ONLINE TRAINING</h2>
+					<div class="content">
+						<ul class="info">
+							{% for course in page.additionalOnlineTraining %}
+							<li>
+								<a href="{{ course.link }}" target="_blank">{{ course.name }}</a>, {{ course.provider }}, {{ course.onlineWebsite }}, ({{ course.status }})
+							</li><br/>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+				<!-- End ADDITIONAL ONLINE TRAINING -->
+
 				<!--
         <div class="entry">
-        <h2>WORKS</h2>
-        	<ul class="works">
-        		<li><a href="images/1.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
-        		<li><a href="images/2.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
-        		<li><a href="images/3.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
-        		<li><a href="images/1.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
-        		<li><a href="images/2.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
-        		<li><a href="images/3.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
-        		<li><a href="images/1.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
-        		<li><a href="images/1.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
-        	</ul>
+	        <h2>WORKS</h2>
+	      	<ul class="works">
+	      		<li><a href="images/1.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
+	      		<li><a href="images/2.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
+	      		<li><a href="images/3.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
+	      		<li><a href="images/1.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
+	      		<li><a href="images/2.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
+	      		<li><a href="images/3.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
+	      		<li><a href="images/1.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
+	      		<li><a href="images/1.jpg" rel="gallery" title="Lorem ipsum dolor sit amet."><img src="images/image.jpg" alt="" /></a></li>
+	      	</ul>
         </div>
 			-->
-        <!-- Begin 5th Row -->
-				<!--
       </div>
       <div class="clear"></div>
       <div class="paper-bottom"></div>
     </div>
     <!-- End Paper -->
+
   </div>
-	<!--
   <div class="wrapper-bottom"></div>
 </div>
--->
 <!--<div id="message"><a href="#top" id="top-link">Go to Top</a></div> -->
 <!-- End Wrapper -->
 </body>

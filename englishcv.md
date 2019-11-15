@@ -10,26 +10,31 @@ web: https://haveacupofcoffee.github.io/blogs/
 
 certifications :
   -
+    period: Oct 2019
+    name: AWS Certified SysOps Administrator - Associate (SOA)
+    link: https://my-all-certifications.s3.ca-central-1.amazonaws.com/aws/AWS+Certified+SysOps+Administrator+-+Associate+certificate.pdf
+
+  -
     period: Sep 2019
     name : AWS Certified Solutions Architect - Associate (SAA)
-    link : https://my-aws-certification.s3.ca-central-1.amazonaws.com/AWS+Certified+Solutions+Architect+-+Associate+certificate.pdf
+    link : https://my-all-certifications.s3.ca-central-1.amazonaws.com/aws/AWS+Certified+Solutions+Architect+-+Associate+certificate.pdf
   -
-    period: Oct 2019
-    name: AWS Certified SysOps Administrator - Associate
-    link: https://my-aws-certification.s3.ca-central-1.amazonaws.com/AWS+Certified+SysOps+Administrator+-+Associate+certificate.pdf
+    period: May 2018
+    name: Alibaba Cloud Certified Professional Big Data
+    link: https://my-all-certifications.s3.ca-central-1.amazonaws.com/alibaba/Alibaba+Cloud+Certified+Professional+Big+Data.png
 
 educations :
  -
-    period : Aug 2012 - June 2013
-    university : Kristianstad university
+    period : Sep 2012 - Aug 2013
+    university : Kristianstad University (HKR)
     univCountry : Kristianstad, Sweden
     major : Master of Science in Embedded Systems
     univWeb: https://www.hkr.se/en/
  -  
     period : Sep 2005 - June 2009
     university : Xinjiang University
-    univCountry : Xinjiang, China
-    major : Bachelor of Software Engineering
+    univCountry : Urumqi, China
+    major : Bachelor of Science in Software Engineering
     univWeb: http://www.xju.edu.cn/    
 
 workexperience :
@@ -42,7 +47,8 @@ workexperience :
     duties :
       - Managed and cooperated with solution partners to provide end-to-end solutions for customers, guided customers to recognize the overall solution values
       - Installed and tested solution system (software and hardware) for customers
-      - Trained customers to understand the system and how to use it. Collected requests of new features and reported back to company
+      - Trained customers to understand the system and how to use it
+      - Collected requests of new features and reported back to company
  -
     period : Jan 2012 - July 2012
     company : Digital China
@@ -66,12 +72,12 @@ workexperience :
 internexperience :
  -
    period : Sep 2013 - Dec 2013
-   company : Hewlett-Packard(HP)
+   company : China Hewlett-Packard Co., Ltd. Shanghai Branch
    location : Shanghai, China
    companyweb : https://www8.hp.com/cn/zh/home.html
-   occupation : Quality Assurance Engineer
+   occupation : Quality Assurance Engineer Intern
    duties :
-     - Tested HP software Service Manager with black-box testing methods
+     - Tested HP software Service Manager with black-box testing method
      - Used Quality Center as the quality management processes tool
 
 projectexperience :
@@ -80,18 +86,18 @@ projectexperience :
    projectname : Demola
    location : Lund, Sweden
    projectweb : https://www.demola.net/
-   occupation : Software Engineer
+   occupation : Software Engineer(Student)
    duties :
-    - Co-designed an Android Robot with two wheels
+    - Co-designed an Android robot with two wheels for master thesis
     - Developed an Android robot APP, a remote-control APP and a microcontroller program
  -
-   period : Sep 2012 – Jan 2013
+   period : Sep 2012 – Dec 2012
    projectname : Smart House
-   location : HKR University, Kristianstad, Sweden
+   location : Kristianstad University, Kristianstad, Sweden
    projectweb :
-   occupation : Software Engineer
+   occupation : Software Engineer(Student)
    duties :
-     - Developed a smart house program with functionalities of controlling lamps, fans and curtains etc. through mobile phone and Kinects. monitoring the temperature and humidity etc. of rooms
+     - Developed a smart house program with functionalities of controlling lamps, fans and curtains, monitoring temperature and humidity of rooms with mobile phone and sensors and monitoring objects movements with Kinects
 skills :
  -
    skilltype : Languages
@@ -101,13 +107,34 @@ skills :
  -
    skilltype : Development
    skillnames :
-    - Python
+    - Python/Flask
     - AWS
     - SQL
     - CSS/HMTL
     - JavaScript
-    - Python flask
+    - Linux
     - Git
     - JAVA
+    - Big Data
+
+additionalOnlineTraining:
+  -
+    name : Python for Everybody
+    provider: University of Michigan
+    onlineWebsite: Coursera
+    link : https://www.coursera.org/specializations/python?
+    status : Certified
+  -
+    name : Web Programming with Python and JavaScript
+    provider: Harvard University
+    onlineWebsite : Edx
+    link : https://courses.edx.org/courses/course-v1:HarvardX+CS50W+Web/course/
+    status : Ongoing
+  -
+    name : Introduction to Data Science
+    provider : Microsoft
+    onlineWebsite : Edx
+    link : https://courses.edx.org/courses/course-v1:Microsoft+DAT101x+3T2019/course/
+    status : Ongoing
 
 ---
