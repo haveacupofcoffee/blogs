@@ -2,7 +2,7 @@
 title : CV(EN)
 layout : cv
 myname: DAOLONG QIU
-jobtitle : Software Engineer
+jobtitle : Software Engineer, Data Scientist
 ad : 14 Paisley Avenue, Toronto, ON
 mail : qdaolong@126.com
 tel : (647)676-4202
