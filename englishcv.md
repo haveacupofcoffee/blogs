@@ -97,7 +97,7 @@ projectexperience :
    projectweb :
    occupation : Software Engineer(Student)
    duties :
-     - Developed a smart house program with functionalities of controlling lamps, fans and curtains, monitoring temperature and humidity of rooms with mobile phone and sensors and monitoring objects movements with Kinects
+     - Developed a smart house program with functionalities of controlling lamps, fans and curtains,monitoring temperature and humidity of rooms with mobile phone and sensors and monitoring objects movements with Kinects
 skills :
  -
    skilltype : Languages
@@ -136,5 +136,6 @@ additionalOnlineTraining:
     onlineWebsite : Edx
     link : https://courses.edx.org/courses/course-v1:Microsoft+DAT101x+3T2019/course/
     status : Ongoing
+
 
 ---

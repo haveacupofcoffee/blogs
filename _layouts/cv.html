@@ -1,66 +1,66 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Resume</title>
-{% assign cvCssPath = site.gitRepositoryURL | append : site.cvCssPath %}
-{% assign cvJsPath = site.gitRepositoryURL | append : site.cvJsPath %}
-{% assign imgPath = site.gitRepositoryURL | append : site.imgPathOne | append : site.cvImgSubPath %}
-<!-- configue this in _config.yml file  -->
-<link type="text/css" rel="stylesheet" href="{{ cvCssPath | append : 'blue.css'}}" />
-<link type="text/css" rel="stylesheet" href="{{ cvCssPath | append : 'print.css' }}" media="print"/>
-<!--[if IE 7]>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Resume</title>
+	{% assign cvCssPath = site.gitRepositoryURL | append : site.cvCssPath %}
+	{% assign cvJsPath = site.gitRepositoryURL | append : site.cvJsPath %}
+	{% assign imgPath = site.gitRepositoryURL | append : site.imgPathOne | append : site.cvImgSubPath %}
+	<!-- configue this in _config.yml file  -->
+	<link type="text/css" rel="stylesheet" href="{{ cvCssPath | append : 'blue.css'}}" />
+	<link type="text/css" rel="stylesheet" href="{{ cvCssPath | append : 'print.css' }}" media="print" />
+	<!--[if IE 7]>
 <link href="css/ie7.css" rel="stylesheet" type="text/css" />
 <![endif]-->
-<!--[if IE 6]>
+	<!--[if IE 6]>
 <link href="css/ie6.css" rel="stylesheet" type="text/css" />
 <![endif]-->
-<script type="text/javascript" src="{{ cvJsPath | append : 'jquery-1.4.2.min.js'}}"></script>
-<script type="text/javascript" src="{{ cvJsPath | append : 'jquery.tipsy.js'}}"></script>
-<script type="text/javascript" src="{{ cvJsPath | append : 'cufon.yui.js'}}"></script>
-<script type="text/javascript" src="{{ cvJsPath | append : 'scrollTo.js'}}"></script>
-<script type="text/javascript" src="{{ cvJsPath | append : 'myriad.js'}}"></script>
-<script type="text/javascript" src="{{ cvJsPath | append : 'jquery.colorbox.js'}}"></script>
-<script type="text/javascript" src="{{ cvJsPath | append : 'custom.js'}}"></script>
-<script type="text/javascript">
+	<script type="text/javascript" src="{{ cvJsPath | append : 'jquery-1.4.2.min.js'}}"></script>
+	<script type="text/javascript" src="{{ cvJsPath | append : 'jquery.tipsy.js'}}"></script>
+	<script type="text/javascript" src="{{ cvJsPath | append : 'cufon.yui.js'}}"></script>
+	<script type="text/javascript" src="{{ cvJsPath | append : 'scrollTo.js'}}"></script>
+	<script type="text/javascript" src="{{ cvJsPath | append : 'myriad.js'}}"></script>
+	<script type="text/javascript" src="{{ cvJsPath | append : 'jquery.colorbox.js'}}"></script>
+	<script type="text/javascript" src="{{ cvJsPath | append : 'custom.js'}}"></script>
+	<script type="text/javascript">
 		Cufon.replace('h1,h2');
-</script>
+	</script>
 </head>
 
 <body>
-<!-- Begin Wrapper -->
-<div id="wrapperCV">
-  <div class="wrapper-top"></div>
-  <div class="wrapper-mid">
-    <!-- Begin Paper -->
-    <div id="paper">
-      <div class="paper-top"></div>
-      <div id="paper-mid">
-				<div class="entry">
+	<!-- Begin Wrapper -->
+	<div id="wrapperCV">
+		<div class="wrapper-top"></div>
+		<div class="wrapper-mid">
+			<!-- Begin Paper -->
+			<div id="paper">
+				<div class="paper-top"></div>
+				<div id="paper-mid">
+					<div class="entry">
 
-          <!-- Begin Image -->
-          <img class="portrait" src="{{ imgPath | append : 'image.jpg'}}" alt="DAOLONG QIU" />
-          <!-- End Image -->
+						<!-- Begin Image -->
+						<img class="portrait" src="{{ imgPath | append : 'image.jpg'}}" alt="DAOLONG QIU" />
+						<!-- End Image -->
 
-          <!-- Begin Personal Information -->
-          <div class="self">
-            <h1 class="name">{{ page.myname }}<br />
-              <span>{{ page.jobtitle }}</span>
-						</h1>
-            <ul>
-              <li class="ad">{{ page.ad }}</li>
-              <li class="mail">{{ page.mail }}</li>
-              <li class="tel"> {{ page.tel }}</li>
-							<!-- put github page here, add link to link to github page -->
-              <li class="web"><a href="{{ page.web }}">{{ page.web }}</a></li>
-            </ul>
-          </div>
-          <!-- End Personal Information -->
+						<!-- Begin Personal Information -->
+						<div class="self">
+							<h1 class="name">{{ page.myname }}<br />
+								<span>{{ page.jobtitle }}</span>
+							</h1>
+							<ul>
+								<li class="ad">{{ page.ad }}</li>
+								<li class="mail">{{ page.mail }}</li>
+								<li class="tel"> {{ page.tel }}</li>
+								<!-- put github page here, add link to link to github page -->
+								<li class="web"><a href="{{ page.web }}">{{ page.web }}</a></li>
+							</ul>
+						</div>
+						<!-- End Personal Information -->
 
-          <!-- Begin Social -->
-					<!--
-          <div class="social">
+						<!-- Begin Social -->
+						<!--
+          	<div class="social">
             <ul>
               <li><a class='north' href="#" title="Download .pdf"><img src="{{ imgPath | append : 'icn-save.jpg'}}" alt="Download the pdf version" /></a></li>
               <li><a class='north' href="javascript:window.print()" title="Print"><img src="{{ imgPath | append : 'icn-print.jpg'}}" alt="" /></a></li>
@@ -68,148 +68,148 @@
               <li><a class='north' href="#" title="Follow me on Twitter"><img src="images/icn-twitter.jpg" alt="" /></a></li>
               <li><a class='north' href="#" title="My Facebook Profile"><img src="images/icn-facebook.jpg" alt="" /></a></li>
             </ul>
-          </div>
-					-->
-          <!-- End Social -->
+          	</div>
+						-->
+						<!-- End Social -->
 
-        </div>
+					</div>
 
-        <!-- OBJECTIVE -->
-				<!--
-        <div class="entry">
+					<!-- OBJECTIVE -->
+					<!--
+        	<div class="entry">
           <h2>OBJECTIVE</h2>
           <p>Live happily, work professionally</p>
-        </div>
-			-->
-				<!-- END OBJECTIVE -->
+        	</div>
+					-->
+					<!-- END OBJECTIVE -->
 
-				<!--Begin CERTIFICATIONS -->
-				<div class="entry">
-					<h2>CERTIFICATIONS</h2>
-					{% for certification in page.certifications %}
-					<div class="content">
-						<h3>{{ certification.period }}</h3>
-						<p><a href="{{ certification.link }}" target="_blank">{{ certification.name }}</a></p>
+					<!--Begin CERTIFICATIONS -->
+					<div class="entry">
+						<h2>CERTIFICATIONS</h2>
+						{% for certification in page.certifications %}
+						<div class="content">
+							<h3>{{ certification.period }}</h3>
+							<p><a href="{{ certification.link }}" target="_blank">{{ certification.name }}</a></p>
+						</div>
+						{% endfor %}
 					</div>
-					{% endfor %}
-				</div>
-				<!-- End CERTIFICATIONS -->
+					<!-- End CERTIFICATIONS -->
 
-        <!--Begin EDUCATION -->
-        <div class="entry">
-          <h2>EDUCATION</h2>
-					{% for education in page.educations %}
-          <div class="content">
-            <h3>{{ education.period }}</h3>
-            <p>
-							<a href="{{education.univWeb}}" target="_blank">{{ education.university }}</a>, {{ education.univCountry}} <br />
-              <em>{{ education.major }}</em>
-						</p>
-          </div>
-					{% endfor %}
-        </div>
-        <!-- End EDUCATION -->
-
-        <!-- Begin WORK EXPERIENCE -->
-        <div class="entry">
-          <h2>WORK EXPERIENCE</h2>
-					{% for experience in page.workexperience %}
-          <div class="content">
-            <h3>{{ experience.period }}</h3>
-						{% if experience.companyweb %}
-            <p>
-							<a href="{{ experience.companyweb }}" target="_blank">{{ experience.company }}</a>, {{ experience.location }}<br />
-						{% else %}
-						<p>{{ experience.company }}, {{ experience.location }}<br />
-						{% endif %}
-              <em>{{ experience.occupation }}</em>
-						</p>
-            <ul class="info">
-							{% for duty in experience.duties %}
-  						<li>{{ duty }}</li>
-							{% endfor %}
-            </ul>
-          </div>
-					{% endfor %}
-        </div>
-        <!-- End WORK EXPERIENCE -->
-
-				<!-- Begin INTERNSHIP EXPERIENCE -->
-				<div class="entry">
-					<h2>INTERNSHIP EXPERIENCE</h2>
-					{% for experience in page.internexperience %}
-					<div class="content">
-						<h3>{{ experience.period }}</h3>
-						<p>
-							<a href="{{ experience.companyweb }}" target="_blank">{{ experience.company }}</a>, {{ experience.location }}<br />
-							<em>{{ experience.occupation }}</em>
-						</p>
-						<ul class="info">
-							{% for duty in experience.duties %}
-							<li>{{ duty }}</li>
-							{% endfor %}
-						</ul>
+					<!--Begin EDUCATION -->
+					<div class="entry">
+						<h2>EDUCATION</h2>
+						{% for education in page.educations %}
+						<div class="content">
+							<h3>{{ education.period }}</h3>
+							<p>
+								<a href="{{education.univWeb}}" target="_blank">{{ education.university }}</a>, {{ education.univCountry}} <br />
+								<em>{{ education.major }}</em>
+							</p>
+						</div>
+						{% endfor %}
 					</div>
-					{% endfor %}
-				</div>
-				<!-- End INTERNSHIP EXPERIENCE -->
+					<!-- End EDUCATION -->
 
-				<!-- Begin PROJECT EXPERIENCE -->
-				<div class="entry">
-					<h2>PROJECT EXPERIENCE</h2>
-					{% for experience in page.projectexperience %}
-					<div class="content">
-						<h3>{{ experience.period }}</h3>
-						{% if experience.projectweb %}
-						<p>
-							<a href="{{ experience.projectweb }}" target="_blank">{{ experience.projectname }}</a>, {{experience.location}}<br />
-						{% else %}
-						<p>{{ experience.projectname }}, {{experience.location}}<br />
-						{% endif %}
-							<em>{{ experience.occupation }}</em>
-						</p>
-						<ul class="info">
-							{% for duty in experience.duties %}
-							<li>{{ duty }}</li>
-							{% endfor %}
-						</ul>
+					<!-- Begin WORK EXPERIENCE -->
+					<div class="entry">
+						<h2>WORK EXPERIENCE</h2>
+						{% for experience in page.workexperience %}
+						<div class="content">
+							<h3>{{ experience.period }}</h3>
+							{% if experience.companyweb %}
+							<p>
+								<a href="{{ experience.companyweb }}" target="_blank">{{ experience.company }}</a>, {{ experience.location }}<br />
+								{% else %}
+								<p>{{ experience.company }}, {{ experience.location }}<br />
+									{% endif %}
+									<em>{{ experience.occupation }}</em>
+								</p>
+								<ul class="info">
+									{% for duty in experience.duties %}
+									<li>{{ duty }}</li>
+									{% endfor %}
+								</ul>
+						</div>
+						{% endfor %}
 					</div>
-					{% endfor %}
-				</div>
-				<!-- End PROJECT EXPERIENCE -->
+					<!-- End WORK EXPERIENCE -->
 
-        <!-- Begin SKILLS -->
-        <div class="entry">
-          <h2>SKILLS</h2>
-					{% for skill in page.skills %}
-          <div class="content">
-            <h3>{{ skill.skilltype }}</h3>
-            <ul class="skills">
-							{% for skillname in skill.skillnames %}
-              <li>{{ skillname }}</li>
-							{% endfor %}
-            </ul>
-          </div>
-          {% endfor %}
-				</div>
-				<!-- End SKILLS -->
-
-				<!-- Begin ADDITIONAL ONLINE TRAINING -->
-				<div class="entry">
-					<h2>ADDITIONAL ONLINE TRAINING</h2>
-					<div class="content">
-						<ul class="info">
-							{% for course in page.additionalOnlineTraining %}
-							<li>
-								<a href="{{ course.link }}" target="_blank">{{ course.name }}</a>, {{ course.provider }}, {{ course.onlineWebsite }}, ({{ course.status }})
-							</li><br/>
-							{% endfor %}
-						</ul>
+					<!-- Begin INTERNSHIP EXPERIENCE -->
+					<div class="entry">
+						<h2>INTERNSHIP EXPERIENCE</h2>
+						{% for experience in page.internexperience %}
+						<div class="content">
+							<h3>{{ experience.period }}</h3>
+							<p>
+								<a href="{{ experience.companyweb }}" target="_blank">{{ experience.company }}</a>, {{ experience.location }}<br />
+								<em>{{ experience.occupation }}</em>
+							</p>
+							<ul class="info">
+								{% for duty in experience.duties %}
+								<li>{{ duty }}</li>
+								{% endfor %}
+							</ul>
+						</div>
+						{% endfor %}
 					</div>
-				</div>
-				<!-- End ADDITIONAL ONLINE TRAINING -->
+					<!-- End INTERNSHIP EXPERIENCE -->
 
-				<!--
+					<!-- Begin PROJECT EXPERIENCE -->
+					<div class="entry">
+						<h2>PROJECT EXPERIENCE</h2>
+						{% for experience in page.projectexperience %}
+						<div class="content">
+							<h3>{{ experience.period }}</h3>
+							{% if experience.projectweb %}
+							<p>
+								<a href="{{ experience.projectweb }}" target="_blank">{{ experience.projectname }}</a>, {{experience.location}}<br />
+								{% else %}
+								<p>{{ experience.projectname }}, {{experience.location}}<br />
+									{% endif %}
+									<em>{{ experience.occupation }}</em>
+								</p>
+								<ul class="info">
+									{% for duty in experience.duties %}
+									<li>{{ duty }}</li>
+									{% endfor %}
+								</ul>
+						</div>
+						{% endfor %}
+					</div>
+					<!-- End PROJECT EXPERIENCE -->
+
+					<!-- Begin SKILLS -->
+					<div class="entry">
+						<h2>SKILLS</h2>
+						{% for skill in page.skills %}
+						<div class="content">
+							<h3>{{ skill.skilltype }}</h3>
+							<ul class="skills">
+								{% for skillname in skill.skillnames %}
+								<li>{{ skillname }}</li>
+								{% endfor %}
+							</ul>
+						</div>
+						{% endfor %}
+					</div>
+					<!-- End SKILLS -->
+
+					<!-- Begin ADDITIONAL ONLINE TRAINING -->
+					<div class="entry">
+						<h2>ADDITIONAL ONLINE TRAINING</h2>
+						<div class="content">
+							<ul class="info">
+								{% for course in page.additionalOnlineTraining %}
+								<li>
+									<a href="{{ course.link }}" target="_blank">{{ course.name }}</a>, {{ course.provider }}, {{ course.onlineWebsite }}, ({{ course.status }})
+								</li><br />
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+					<!-- End ADDITIONAL ONLINE TRAINING -->
+
+					<!--
         <div class="entry">
 	        <h2>WORKS</h2>
 	      	<ul class="works">
@@ -224,16 +224,17 @@
 	      	</ul>
         </div>
 			-->
-      </div>
-      <div class="clear"></div>
-      <div class="paper-bottom"></div>
-    </div>
-    <!-- End Paper -->
+				</div>
+				<div class="clear"></div>
+				<div class="paper-bottom"></div>
+			</div>
+			<!-- End Paper -->
 
-  </div>
-  <div class="wrapper-bottom"></div>
-</div>
-<!--<div id="message"><a href="#top" id="top-link">Go to Top</a></div> -->
-<!-- End Wrapper -->
+		</div>
+		<div class="wrapper-bottom"></div>
+	</div>
+	<!--<div id="message"><a href="#wrapper-top" id="top-link">Go to Top</a></div> -->
+	<!-- End Wrapper -->
 </body>
+
 </html>
