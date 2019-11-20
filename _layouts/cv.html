@@ -154,11 +154,13 @@
 							<h3>{{ experience.period }}</h3>
 							{% if experience.projectweb %}
 							<p>
-								<a href="{{ experience.projectweb }}" target="_blank">{{ experience.projectname }}</a>, {{experience.location}}<br />
+								{{ experience.projectname }},
+								<a href="{{ experience.projectweb }}" target="_blank">{{ experience.projectOwner }}</a>,
+								{{experience.location}}<br />
 								{% else %}
-								<p>{{ experience.projectname }}, {{experience.location}}<br />
+								<p>{{ experience.projectname }}, {{ experience.projectOwner }}, {{experience.location}}<br />
 									{% endif %}
-									<em>{{ experience.occupation }}</em>
+									<em>{{ experience.programmingLanguage }}</em>
 								</p>
 								<ul class="info">
 									{% for duty in experience.duties %}
