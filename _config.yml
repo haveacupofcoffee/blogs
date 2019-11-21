@@ -4,7 +4,11 @@ email: qdaolong@126.com
 description: > # this means to ignore newlines until "twitter_username:"
   This blog is used to share some knowledge of python, hope it can help you during
   your coffee time.
+<<<<<<< HEAD
 gitRepositoryURL: ""
+=======
+gitRepositoryURL: "/blogs"
+>>>>>>> 186748e784b7f1eb98386fe3a5a0b255de9d4bae
 imgPathOne: "/assets/images/"
 cvCssPath : "/assets/css/cv/"
 cvJsPath : "/assets/js/cv/"
@@ -49,8 +53,11 @@ minima:
 # - about.md
 
 # Build settings
-theme: minima
+#remote_theme: Minimal Mistakes
+
 
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+
+theme: jekyll-theme-leap-day

@@ -5,7 +5,7 @@ myname: DAOLONG QIU
 jobtitle : Software Engineer, Data Scientist
 ad : 14 Paisley Avenue, Toronto, ON
 mail : qdaolong@126.com
-tel : (647)676-4202
+tel : (647)-676-4202
 web: https://haveacupofcoffee.github.io/blogs/
 
 certifications :
@@ -54,7 +54,7 @@ workexperience :
     company : Digital China
     location : Shanghai, China
     companyweb : http://www.digitalchina.com/
-    occupation : Software Engineer
+    occupation : Software Developer
     duties :
      - Maintained 6 on-premises severs (Linux and Windows), deployed new system patches
      - Developed new features and fixed bugs
@@ -75,7 +75,7 @@ internexperience :
    company : China Hewlett-Packard Co., Ltd. Shanghai Branch
    location : Shanghai, China
    companyweb : https://www8.hp.com/cn/zh/home.html
-   occupation : Quality Assurance Engineer Intern
+   occupation : Quality Assurance Intern
    duties :
      - Tested HP software Service Manager with black-box testing method
      - Used Quality Center as the quality management processes tool
@@ -83,19 +83,21 @@ internexperience :
 projectexperience :
  -
    period : Mar 2013 – June 2013
-   projectname : Demola
+   projectname : An Android phone-based Robot
+   projectOwner: Demola
    location : Lund, Sweden
    projectweb : https://www.demola.net/
-   occupation : Software Engineer(Student)
+   programmingLanguage: Written in Java
    duties :
     - Co-designed an Android robot with two wheels for master thesis
     - Developed an Android robot APP, a remote-control APP and a microcontroller program
  -
    period : Sep 2012 – Dec 2012
    projectname : Smart House
-   location : Kristianstad University, Kristianstad, Sweden
+   projectOwner: Kristianstad University
+   location : Kristianstad, Sweden
    projectweb :
-   occupation : Software Engineer(Student)
+   programmingLanguage : Written in Java with Arduino
    duties :
      - Developed a smart house program with functionalities of controlling lamps, fans and curtains,monitoring temperature and humidity of rooms with mobile phone and sensors and monitoring objects movements with Kinects
 skills :
@@ -107,7 +109,7 @@ skills :
  -
    skilltype : Development
    skillnames :
-    - Python/Flask
+    - Python/Flask/Django
     - AWS
     - SQL
     - CSS/HMTL
