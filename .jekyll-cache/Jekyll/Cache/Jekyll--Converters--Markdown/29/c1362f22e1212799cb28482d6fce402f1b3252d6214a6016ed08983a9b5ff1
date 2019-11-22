@@ -1,0 +1,98 @@
+I"F
+<h3 id="1introduction">1.Introduction</h3>
+<p>Hola! Geeks and nerds. In this post I will introduce how to install python3 and
+flask on EC2. I know I have written a similar post before
+<a href="/2019/01/20/Run-Your-first-flask-program-on-AWS-EC2">Run Your First Flask Application on AWS EC2</a>.
+But when I followed the steps, I met some new problems, like openssl version
+is too old for pip that you can’t run <code class="highlighter-rouge">pip3</code> command. I don’t have much space
+on my computer SSD and I really don’t want to install VM on my computer as it’s
+too heavy. So I used AWS EC2 as an example. It’s free(Has one year free program)
+and very convenient.</p>
+
+<h3 id="2outline">2.Outline</h3>
+<ol>
+  <li>How to install openssl<br />
+When you install flask with <code class="highlighter-rouge">pip3</code> command, if you have the problem below, you
+need to install a new version of openssl. You could find answer of how to
+install openssl in this post.
+    <blockquote>
+
+      <p><img src="/assets/images/2019-09-27/01.png" alt="" /></p>
+    </blockquote>
+  </li>
+  <li>A bash script you could use to install python3 and flask when you launch an
+EC2 instance or after you launch an EC2 instance.</li>
+</ol>
+
+<p><em>Note: Remember to run all commands or the bash script with root user</em></p>
+<h3 id="3how-to-install-openssl">3.How to install openssl</h3>
+<p>Before you install openssl, use <code class="highlighter-rouge">openssl version</code> to check if the system has a
+default version of openssl. If the system doesn’t have a default openssl or the
+version is too old, install a newer version of openssl. You could find openssl
+release version from <a href="https://www.openssl.org/source/">openssl webpage</a>. Here I
+am using the version <em>1.1.1d</em>.</p>
+<blockquote>
+
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://www.openssl.org/source/openssl-1.1.1d.tar.gz
+tar -zxvf openssl-1.1.1d.tar.gz
+cd openssl-1.1.1d
+./config
+make
+make install
+</code></pre></div>  </div>
+</blockquote>
+
+<p>Back up the old version <code class="highlighter-rouge">openssl</code> command, if the system doesn’t have a default
+openssl that had been installed. Skip this step.</p>
+<blockquote>
+
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv /usr/bin/openssl /usr/bin/openssl.bak
+</code></pre></div>  </div>
+</blockquote>
+
+<p>link to the new <code class="highlighter-rouge">openssl</code> command, the default installing directory is <strong>/usr/local/bin</strong></p>
+<blockquote>
+
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ln -s /usr/local/bin/openssl /usr/bin/openssl
+</code></pre></div>  </div>
+</blockquote>
+
+<p>change system configuration</p>
+<blockquote>
+
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "/usr/local/lib64" &gt;&gt; /etc/ld.so.conf
+ldconfig -v
+</code></pre></div>  </div>
+</blockquote>
+
+<p>After you finish, run <code class="highlighter-rouge">openssl version</code> to check if the new version of openssl
+has been installed successfully.</p>
+
+<h3 id="4-a-bash-script-to-do-the-job">4. A bash script to do the job</h3>
+<p>To make the job easier, here I provide a bash script to do the job. Make sure
+the linux system you are using supports <code class="highlighter-rouge">yum</code> command. Otherwise you need to
+change the <code class="highlighter-rouge">yum</code> command in the script.</p>
+
+<p>You could download the script file from here
+<a href="https://my-samplecode.s3.ca-central-1.amazonaws.com/bashscript/pythonflaskinstall.sh">pythonflaskinstallbashscript</a>.</p>
+
+<p>You could choose to execute the bash script when you launch an EC2 instance. On
+Step3: Configure Instance Details, at the bottom of the page choose the file you
+want to execute when you launch EC2 instance.</p>
+<blockquote>
+
+  <p><img src="/assets/images/2019-09-27/02.png" alt="" /></p>
+</blockquote>
+
+<p><em>Note: Even you choose this way, it will still take 10-20 minutes(maybe shorter,
+maybe longer) to prepare the environment.</em></p>
+
+<p>You could use commands below to check if python and flask are installed successfully.</p>
+<blockquote>
+
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl version
+python3 --version
+flask --version
+</code></pre></div>  </div>
+</blockquote>
+:ET

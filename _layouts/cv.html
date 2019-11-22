@@ -3,9 +3,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Resume</title>
-	{% assign cvCssPath = site.gitRepositoryURL | append : site.cvCssPath %}
-	{% assign cvJsPath = site.gitRepositoryURL | append : site.cvJsPath %}
-	{% assign imgPath = site.gitRepositoryURL | append : site.imgPathOne | append : site.cvImgSubPath %}
+	{% assign cvCssPath = site.cvCssPath |relative_url %}
+	{% assign cvJsPath = site.cvJsPath | relative_url%}
+	{% assign imgPath = "/assets/images/" | append : site.cvImgSubPath | relative_url%}
 	<!-- configue this in _config.yml file  -->
 	<link type="text/css" rel="stylesheet" href="{{ cvCssPath | append : 'blue.css'}}" />
 	<link type="text/css" rel="stylesheet" href="{{ cvCssPath | append : 'print.css' }}" media="print" />

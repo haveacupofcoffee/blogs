@@ -4,15 +4,14 @@ email: qdaolong@126.com
 description: > # this means to ignore newlines until "twitter_username:"
   This blog is used to share some knowledge of python, hope it can help you during
   your coffee time.
-gitRepositoryURL: "/testblogs"
-imgPathOne: "/assets/images/"
+baseurl: "/testblogs"
 cvCssPath : "/assets/css/cv/"
 cvJsPath : "/assets/js/cv/"
 resourcesPath : "/assets/resources/"
 show_excerpts: false # set to true to show excerpts on the homepage
 cvImgSubPath: "cv/"
 gitURL: "https://github.com/haveacupofcoffee/blogs/blob/master/"
-
+permalink: /:year/:month/:day/:title
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
@@ -51,6 +50,27 @@ minima:
 # Build settings
 theme: minima
 
+
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+ - jekyll-archives
+
+post_archives:
+  -
+    type: By Year
+    filter: "%Y"
+  -
+    type: By Categories
+  -
+    type: By Tags
+
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+  - scope:
+      path: "assets/resouces"
+    values:
+      resouce: true

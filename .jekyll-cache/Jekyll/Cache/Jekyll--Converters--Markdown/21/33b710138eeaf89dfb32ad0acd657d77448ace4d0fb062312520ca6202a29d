@@ -1,0 +1,165 @@
+I"�
+<p>Hej,Hej! geeks and nerds. This is an introduction about how to run your
+first flask application on AWS EC2.Since cloud service is very popular nowadays
+and AWS offers free trial service for individuals. So you are going to use AWS EC2
+as your server and your computer as client to access the flask applicaton deployed on EC2.</p>
+
+<h3 id="1start-with-aws-ec2">1.Start with AWS EC2</h3>
+<p>To use AWS EC2, follow the guide below:<br />
+<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html#ec2-connect-to-instance-linux">AWS EC2 UserGuide</a><br />
+Here I am using AMI as below, as you can see, there are many tools which have been installed already.</p>
+<blockquote>
+
+  <p><img src="/assets/images/2019-01-20/01.png" alt="" /></p>
+</blockquote>
+
+<p>Choose the free Instance:</p>
+<blockquote>
+
+  <p><img src="/assets/images/2019-01-20/02.png" alt="" /></p>
+</blockquote>
+
+<p>Make sure HTTP and SSH is available for connection</p>
+<blockquote>
+
+  <p><img src="/assets/images/2019-01-20/03.png" alt="" /></p>
+</blockquote>
+
+<p>Then launch the instance, you may need to create a new key pair for security if
+you don’t have one when you launch it.</p>
+
+<h3 id="2-gitbash">2. Gitbash</h3>
+<p>To access the AWS EC2 instance we just created, you need a tool that supports
+SSH connection. Here I am using Git Bash, it is just one feature of Git.
+You could download Git from website <a href="https://git-scm.com/downloads">Git download</a> according to
+the OS you are using on your computer. After you install Git, you could type
+<code class="highlighter-rouge">git</code> in your search bar or right click on the desktop and choose Git Bash.</p>
+<blockquote>
+
+  <p><img src="/assets/images/2019-01-20/04.png" alt="" /></p>
+</blockquote>
+
+<p>Now you can access AWS EC2 instance by type <code class="highlighter-rouge">ssh</code> command as below:</p>
+<blockquote>
+
+  <p><img src="/assets/images/2019-01-20/05.png" alt="" /></p>
+</blockquote>
+
+<p>The <strong>myaws.pem</strong> file is my key pair file, need to put the absolute path of this
+file here if you didn’t move into the parent directory of this file.</p>
+
+<h3 id="3-magic-python">3. Magic Python</h3>
+<p>You may remember when I chose AMI for AWS EC2， I mentioned that it contained
+some tool packages already. Python is one of them. If you type <code class="highlighter-rouge">python --version</code>,
+it will show the version of python. Here the pre-installed python version is <em>2.7.14</em> as shown below.</p>
+<blockquote>
+
+  <p><img src="/assets/images/2019-01-20/06.png" alt="" /></p>
+</blockquote>
+
+<p>I will use the latest version of python3 here. There are many ways to install
+python under Linux. Here I will use the <code class="highlighter-rouge">wget</code> command to download python 3.7.2
+package then install it. Before you install python, I recommend you to change to
+<code class="highlighter-rouge">root</code> user with command <code class="highlighter-rouge">sudo su</code>(The images below may not show that I was using root user).</p>
+<ul>
+  <li>download
+<code class="highlighter-rouge">wget wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz</code></li>
+  <li>unzip
+<code class="highlighter-rouge">tar -zxvf Python-3.7.2.tgz</code></li>
+  <li>Configure
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd Python-3.7.2  
+./configure
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>Note : you may meet the “no acceptable C compiler found in $PATH “ error as below:</p>
+<blockquote>
+
+  <p><img src="/assets/images/2019-01-20/07.png" alt="" /></p>
+</blockquote>
+
+<p>In this case , you need to install C compilers first:</p>
+
+<p><code class="highlighter-rouge">yum install make gcc gcc-c++</code></p>
+<blockquote>
+
+  <p><img src="/assets/images/2019-01-20/08.png" alt="" /></p>
+</blockquote>
+
+<p>Then run <code class="highlighter-rouge">./configure</code> again.<br />
+when you run <code class="highlighter-rouge">./configure</code>, you need to answer a question. Type <code class="highlighter-rouge">y</code>.</p>
+<blockquote>
+
+  <p><img src="/assets/images/2019-01-20/09.png" alt="" /></p>
+</blockquote>
+
+<ul>
+  <li>compile and install</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make
+make install
+</code></pre></div></div>
+
+<p>after you finish, type <code class="highlighter-rouge">python3 --version</code> in the command line. You should see the new python version you installed.</p>
+<blockquote>
+
+  <p><img src="/assets/images/2019-01-20/10.png" alt="" /></p>
+</blockquote>
+
+<p>If it shows command not found error. You need to edit the PATH variable.<br />
+For me my python3 command is in the path <code class="highlighter-rouge">/usr/local/bin</code>, so I need to add this path to PATH variable. One way to do this:</p>
+
+<p><code class="highlighter-rouge">vim ~/.bashrc</code></p>
+
+<p>then add <code class="highlighter-rouge">export PATH=/usr/local/bin:$PATH</code> at the end of the file, save the file.
+then run the command <code class="highlighter-rouge">source ~/.bashrc</code>, then try <code class="highlighter-rouge">python3 --version</code></p>
+
+<h3 id="4-flask-framework">4. flask framework</h3>
+<p>Flask is a framework used to develop Web applications with Python. You could install flask
+in a virtual environment. But here I will just install it directly. I need to remind you that you may have
+two versions of python installed in your system, and you want to work on flask with the newest python3. So you need to install
+flask with command <code class="highlighter-rouge">python3 -m pip install flask</code>(use user root)
+Then try <code class="highlighter-rouge">flask --version</code> to check if you installed flask successfully.</p>
+<blockquote>
+
+  <p><img src="/assets/images/2019-01-20/11.png" alt="" /></p>
+</blockquote>
+
+<h3 id="5-run-your-first-flask-application">5. Run your first flask application</h3>
+<p>To run your first flask application, you need to have an flask application first, here I created a python file
+named <strong>hellotest.py</strong>:</p>
+<blockquote>
+
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">from</span> <span class="n">flask</span> <span class="n">import</span> <span class="no">Flask</span>
+<span class="n">app</span> <span class="o">=</span> <span class="no">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+<span class="vi">@app</span><span class="p">.</span><span class="nf">route</span><span class="p">(</span><span class="s2">"/"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">index</span><span class="p">()</span> <span class="p">:</span>
+    <span class="k">return</span> <span class="s2">"&lt;h1&gt;Hello world!&lt;/h1&gt;"</span>
+<span class="vi">@app</span><span class="p">.</span><span class="nf">route</span><span class="p">(</span><span class="s2">"/user/&lt;name&gt;"</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">user</span><span class="p">(</span><span class="nb">name</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s2">"&lt;h1&gt;hello,{}&lt;/h1&gt;"</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span></code></pre></figure>
+
+<p>First run command <code class="highlighter-rouge">export FLASK_APP=hellotest.py</code>, then run <code class="highlighter-rouge">flask run -h 0.0.0.0 -p 80</code>,
+it shows information like below:</p>
+<blockquote>
+
+  <p><img src="/assets/images/2019-01-20/12.png" alt="" /></p>
+</blockquote>
+
+<p>Then open a browser in your computer and access the flask application with AWS EC2 IPv4 public IP address(for me its http://35.183.77.241/ ):</p>
+<blockquote>
+
+  <p><img src="/assets/images/2019-01-20/13.png" alt="" /></p>
+</blockquote>
+
+<blockquote>
+
+  <p><img src="/assets/images/2019-01-20/14.png" alt="" /></p>
+</blockquote>
+
+<p>Voila! You did it, now you can get your ass on the boat and enjoy the journey of flask!</p>
+:ET

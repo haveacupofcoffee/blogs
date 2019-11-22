@@ -1,0 +1,128 @@
+I"F<p>first CGI program with Python Web Server. Here I am using python3.
+We all know ( Maybe you don’t know) the process below of creating a
+CGI program and running it.</p>
+
+<ol>
+  <li>Create a folder called <strong>cgi-bin</strong>,  Here I put it in the folder
+<strong>C:\Python\Python-web</strong>.
+    <blockquote>
+      <p>C:\Python\Python-web</p>
+      <blockquote>
+        <p>cgi-bin</p>
+      </blockquote>
+
+      <p><img src="/assets/images/2019-01-09/01.jpg" alt="" /></p>
+    </blockquote>
+  </li>
+  <li>Create a file <strong>main.py</strong>, put it in the folder
+<strong>cgi-bin</strong>, so the Absolute Path of this file is
+<strong>C:\Python\Python-web\cgi-bin\main.py</strong>.
+    <blockquote>
+      <p>C:\Python\Python-web</p>
+      <blockquote>
+        <p>cgi-bin</p>
+        <blockquote>
+          <p>main.py</p>
+        </blockquote>
+      </blockquote>
+
+      <p>source code of <em>main.py</em> :</p>
+      <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print ("Content-type:text/html")
+print ()
+print ('<span class="nt">&lt;html&gt;</span>')
+print ('<span class="nt">&lt;head&gt;</span>')
+print ('<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>')
+print ('<span class="nt">&lt;title&gt;</span>Hello Word - my first CGI Program<span class="nt">&lt;/title&gt;</span>')
+print ('<span class="nt">&lt;/head&gt;</span>')
+print ('<span class="nt">&lt;body&gt;</span>')
+print ('<span class="nt">&lt;h2&gt;</span>Hello Word!<span class="nt">&lt;/h2&gt;</span>')
+print ('<span class="nt">&lt;/body&gt;</span>')
+print ('<span class="nt">&lt;/html&gt;</span>')
+</code></pre></div>      </div>
+    </blockquote>
+  </li>
+  <li>Open cmd shell, change the current directory to
+<strong>C:\Python\Python-web</strong> as below :
+    <blockquote>
+
+      <p><img src="/assets/images/2019-01-09/02.jpg" alt="" /></p>
+    </blockquote>
+  </li>
+  <li>Type <code class="highlighter-rouge">python -m http.server --cgi 8002</code>, start python web server.
+(please install python3 first)
+    <blockquote>
+
+      <p><img src="/assets/images/2019-01-09/03.jpg" alt="" /></p>
+    </blockquote>
+  </li>
+  <li>Open a browser, type <em>http://localhost:8002/cgi-bin/main.py</em>
+or <em>http://127.0.0.1:8002/cgi-bin/main.py</em>
+    <blockquote>
+
+      <p><img src="/assets/images/2019-01-09/04.jpg" alt="" /></p>
+    </blockquote>
+  </li>
+</ol>
+
+<p>Bingo! You get it. Cool right? Have a cup of coffee and taste your victory.</p>
+
+<p>After your coffee, let’s think one step deeper. What do you think the
+result would be if I do some changes here.</p>
+
+<ol>
+  <li>
+    <p>Copy folder <strong>cgi-bin</strong>, name the copy as <strong>cgi</strong>, then change the current
+directory to <strong>C:\Python\Python-web</strong> in cmd shell, start the python
+http.server, then run:<em>http://localhost:8002/cgi/main.py</em></p>
+  </li>
+  <li>
+    <p>Copy folder <strong>cgi-bin</strong>, name the copy as <strong>htbin</strong>, then change the
+current directory to <strong>C:\Python\Python-web</strong> in cmd shell, start the python
+http.server, then run:<em>http://localhost:8002/htbin/main.py</em></p>
+  </li>
+  <li>
+    <p>Change the current directory to <strong>C:\Python\Python-web\cgi-bin</strong> in
+cmd shell, start the python http.server, then run:<em>http://localhost:8002/htbin/main.py</em></p>
+  </li>
+  <li>
+    <p>Create a new folder with name <strong>cgi</strong> (you can name it as what you
+want) under the folder <strong>cgi-bin</strong>, move the file main.py into the folder <strong>cgi</strong>,
+then change the current directory to <strong>C:\Python\Python-web</strong>
+in cmd shell, start python http.server, then run:<em>http://localhost:8002/cgi-bin/cgi/main.py</em></p>
+  </li>
+</ol>
+
+<p>Does the coffee taste a litte bit bitter after your tried the
+exmaples above?  Why does it show the source code of the mian.py
+file in the browser for examples 1 and 3. Why examples 2 and 4
+are still right?</p>
+
+<p>Well, Let us see what is happening here.  When we run the command
+<code class="highlighter-rouge">python -m http.server --cgi 8002</code>, actually we are running the <strong>server.py</strong>
+file provide by python3. This file is in the folder where you installed
+python3. For me the file path is as below.</p>
+<blockquote>
+
+  <p><img src="/assets/images/2019-01-09/05.jpg" alt="" /></p>
+</blockquote>
+
+<p>Let’s open the file <em>server.py</em> and search for <em>/cgi-bin</em> or <em>/htbin</em>.
+We find a variable with name <em>cgi-directories</em>.</p>
+<blockquote>
+
+  <p><img src="/assets/images/2019-01-09/06.jpg" alt="" /></p>
+</blockquote>
+
+<p>Then we search <em>cgi_directories</em> and find this:</p>
+<blockquote>
+
+  <p><img src="/assets/images/2019-01-09/07.jpg" alt="" /></p>
+</blockquote>
+
+<p>That’s why we need to start the python web server under the parent
+folder of <strong>cgi-bin</strong> or <strong>htbin</strong>. The url could be in format <em>localhost:8002/cgi-bin/</em>*
+or <em>localhost:8002/htbin/</em>*.</p>
+
+<p>Okay. Now you know how to run your first simple CGI program with
+Python Web Server. Warm your coffee and Enjoy!</p>
+:ET
