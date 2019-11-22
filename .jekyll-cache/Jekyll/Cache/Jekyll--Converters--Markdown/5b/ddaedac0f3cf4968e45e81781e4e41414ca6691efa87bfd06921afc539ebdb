@@ -1,0 +1,72 @@
+I"t
+<p>Bonjour, geeks and nerds. In this post I will introduce how to write your blog with Jekyll and Github Pages.
+There are many tutorials online of Jekyll and Github. If this post can’t please you, well, I don’t care.
+The syllabus of this post:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">No</th>
+      <th style="text-align: center">Title</th>
+      <th style="text-align: center">Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">Jekyll</td>
+      <td style="text-align: center">Brief introduction</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">Github Pages</td>
+      <td style="text-align: center">Brief introduction</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">Deploy Jekyll with minima theme on Github Pages</td>
+      <td style="text-align: center">introduction of how to deploy jekyll with minima theme on Github</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="1jekyll">1.Jekyll</h3>
+<p>I highly recommend you to read Jekyll’s official step by step tutorial.<br />
+<a href="https://jekyllrb.com/docs/step-by-step/01-setup/">Jekyll official step by step tutorial</a></p>
+
+<h3 id="2github-pages">2.Github Pages</h3>
+<p>I highly recommend you to read the official introduction of Github pages.<br />
+<a href="https://pages.github.com/">Github Pages</a></p>
+
+<h3 id="3deploy-jekyll-with-minima-theme-on-github-pages">3.Deploy Jekyll with minima theme on Github Pages</h3>
+<p>I assume you would have a Jekyll project on your computer if you tried to type the code when you
+read the official Jekyll tutorial. When you run it, the first page it showed is ugly and simple, but
+at least it worked.</p>
+
+<p>To make your blog pages pretty, Jekyll provides many themes. The default theme is minima, defined in <strong>_config.yml</strong> file. Well, there are many other themes you can use, but here I will just use minima as the example.</p>
+
+<p>An easy way is to fork jekyll/minima repository to your account:</p>
+<ul>
+  <li>First you need to login in Github, search jekyll/mimima like below:
+    <blockquote>
+
+      <p><img src="/assets/images/2019-01-27/01.png" alt="" /></p>
+    </blockquote>
+  </li>
+  <li>After you jump to the jekyll/mimima page, click fork:
+    <blockquote>
+
+      <p><img src="/assets/images/2019-01-27/02.png" alt="" /></p>
+    </blockquote>
+  </li>
+  <li>Now you have your own minima repository, if you don’t like the name, just change it
+    <blockquote>
+
+      <p><img src="/assets/images/2019-01-27/03.png" alt="" /></p>
+    </blockquote>
+  </li>
+</ul>
+
+<p><strong>Note:</strong><br />
+<em>when you name your repository with letters, don’t use - or other wired characters, otherwise you may have problem when you try to access the Github page of your repository</em></p>
+:ET

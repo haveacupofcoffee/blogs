@@ -1,0 +1,45 @@
+I"
+<p>Hej,Hej! Geeks and nerds. In the last post I introduced how to write your blog
+with Jekyll and Github pages. It’s time to link to your CV unless you have
+concerns about your privacy.</p>
+
+<p>Since I was using minima theme of Jekyll, one way to do this is writing your CV
+information in <strong>about.md</strong> file. Then when you click on <em>about</em> in the
+navigation bar, it will show your CV. But it is not clear for the viewers unless
+you change the name <em>about</em> to <em>CV</em> or some other names which are obvious to the
+viewers. Here I will keep <em>about</em> page. I will add a new navigation link near
+the <em>about</em> navigation link to present my CV.</p>
+
+<p>To write a CV, the content of the CV is important, but the structure and the
+appearance are more important. You have to make it organized to give the viewer
+a great first impression. There are many CV templates online, using them will
+make your work easier.</p>
+
+<h3 id="1cv-template">1.CV template</h3>
+<p>You could download the original CV template I am using from the link below:<br />
+<a href="/assets/resources/2019-05-10/cvtempalte.zip">Download the CV template files</a></p>
+
+<h3 id="2add-cv-files-to-the-blog">2.Add CV files to the blog</h3>
+<p>To add the CV files to the blog, we need to follow the structure of jekyll.
+Here I add file <strong>cv.html</strong> in <strong>_layout</strong> folder. This file is the layout template
+of the CV. To simplify at the beginning, I didn’t set the layout value of this
+file as default. The <strong>cv.file</strong> uses the structure of the <strong>index.html</strong> from the
+original CV template you downloaded from the above link. You could check this
+file by clicking the link below:  <br />
+<a href="https://github.com/haveacupofcoffee/blogs/blob/master/\_layouts/cv.html">cv.html</a></p>
+
+<p>The <strong>cv.html</strong> is just the presentation of the CV, I put the content of the CV
+in <strong>englishcv.md</strong> file. In this file, I defined the <em>title</em> variable to <em>CV(EN)</em>
+which will be shown in the navigation bar as my CV navigation link.</p>
+
+<h3 id="3-problems-need-to-be-fixed-later">3. Problems need to be fixed later</h3>
+<p>We added a link to cv in the blog. If you try it, it works well. But there are
+some problems we need to fix later.</p>
+<ul>
+  <li><code class="highlighter-rouge">cv.html</code>: this file has its own css and js scripts. and it didn’t use the
+default layout, that’s why when we redirect to the CV page, there is no
+navigation bar and footer bar like other blog pages. We need to fix this later.</li>
+  <li><code class="highlighter-rouge">cv.html</code>: download pdf function is not working so far.</li>
+  <li><code class="highlighter-rouge">cv.html</code>: go to top function is not working on some browsers like chrome.</li>
+</ul>
+:ET
